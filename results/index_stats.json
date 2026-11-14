@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-11-13T19:18:48+07:00",
+  "generated_by": "python -m src.indexing",
+  "corpus": {
+    "pages": 69,
+    "chars": 138371
+  },
+  "embedding": {
+    "provider": "Sentence Transformers, chạy local (CPU)",
+    "model": "intfloat/multilingual-e5-base",
+    "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+    "dimensions": 768,
+    "max_seq_length": 512,
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: ",
+    "normalized": true,
+    "cost_usd": 0,
+    "versions": {
+      "sentence-transformers": "6.3.0",
+      "transformers": "5.22.2",
+      "torch": "2.15.0+cpu"
+    },
+    "model_load_seconds": 13.23
+  },
+  "store": {
+    "backend": "PostgreSQL + pgvector",
+    "postgresql": "16.16 (Debian 16.16-1.pgdg12+1)",
+    "pgvector": "0.8.7",
+    "table": "chunks",
+    "search": "exact (không dùng index ANN)",
+    "metric": "cosine distance <=>, score = 1 - distance"
+  },
+  "strategies": {
+    "A": {
+      "index": "A",
+      "use_filter": false
+    },
+    "B": {
+      "index": "B",
+      "use_filter": false
+    },
+    "C": {
+      "index": "B",
+      "use_filter": true
+    }
+  },
+  "indexes": {
+    "A": {
+      "params": {
+        "chunker": "fixed_size",
+        "size": 500,
+        "overlap": 50
+      },
+      "chunks": 337,
+      "pages_covered": 69,
+      "total_chars": 151658,
+      "chars": {
+        "min": 56,
+        "p10": 220,
+        "median": 500,
+        "mean": 450.0,
+        "p90": 500,
+        "max": 500
+      },
+      "chunks_under_100_chars": 8,
+      "tokens": {
+        "mean": 114.1,
+        "max": 155,
+        "over_max_seq_length": 0
+      },
+      "chunk_seconds": 0.0,
+      "sync": {
+        "inserted": 0,
+        "updated": 0,
+        "unchanged": 337,
+        "deleted": 0,
+        "rows_in_db": 337,
+        "rows_match_chunks": true,
+        "embed_seconds": 0.0,
+        "sync_seconds": 0.01
+      }
+    },
+    "B": {
+      "params": {
+        "chunker": "by_paragraph",
+        "max_size": 800,
+        "min_segment": 120
+      },
+      "chunks": 254,
+      "pages_covered": 69,
+      "total_chars": 138186,
+      "chars": {
+        "min": 80,
+        "p10": 282,
+        "median": 560.5,
+        "mean": 544.0,
+        "p90": 774,
+        "max": 800
+      },
+      "chunks_under_100_chars": 1,
+      "tokens": {
+        "mean": 136.3,
+        "max": 232,
+        "over_max_seq_length": 0
+      },
+      "chunk_seconds": 0.01,
+      "sync": {
+        "inserted": 0,
+        "updated": 0,
+        "unchanged": 254,
+        "deleted": 0,
+        "rows_in_db": 254,
+        "rows_match_chunks": true,
+        "embed_seconds": 0.0,
+        "sync_seconds": 0.01
+      }
+    }
+  },
+  "total_seconds": 15.06
+}

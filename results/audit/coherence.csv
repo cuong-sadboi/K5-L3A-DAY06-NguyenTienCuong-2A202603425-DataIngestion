@@ -1,0 +1,188 @@
+﻿position_id,page,char_offset,source_context,strategy,chunk_id,chunk_chars,chunk_text,coherence_0_1_2,reason
+pos01,11,1345,"các mô hình học máy có thể học từ dữ liệu để phát hiện các mẫu hành vi bất thường một cách linh hoạt và hiệu quả hơn. Xuất phát từ những nhu cầu và th[•]ách thức trên, đề tài “Xây dựng hệ thống phân tích và phát hiện traffic bất thường trong Digital Marketing sử dụng Machine Learning” được lựa chọn nhằ",A,A:doan-bot-traffic-2026:p11:900-1400,500,"phân tích và phát hiện
+traffic bất thường với chi phí hợp lý và khả năng mở rộng tốt.
+Bên cạnh đó, sự phát triển của Machine Learning đã mở ra nhiều hướng tiếp cận
+mới trong việc phân tích hành vi truy cập và nhận diện bot traffic dựa trên dữ liệu thực
+tế. Thay vì chỉ sử dụng các rule cố định, các mô hình học máy có thể học từ dữ liệu để
+phát hiện các mẫu hành vi bất thường một cách linh hoạt và hiệu quả hơn.
+Xuất phát từ những nhu cầu và thách thức trên, đề tài “Xây dựng hệ thống phân
+tích và p",0,"Câu chứa vị trí bị cắt giữa tên đề tài ('…phân tích và p'), mất vị ngữ 'được lựa chọn nhằm…'; chunk mở đầu bằng mảnh câu trước."
+pos01,11,1345,"các mô hình học máy có thể học từ dữ liệu để phát hiện các mẫu hành vi bất thường một cách linh hoạt và hiệu quả hơn. Xuất phát từ những nhu cầu và th[•]ách thức trên, đề tài “Xây dựng hệ thống phân tích và phát hiện traffic bất thường trong Digital Marketing sử dụng Machine Learning” được lựa chọn nhằ",B,B:doan-bot-traffic-2026:p11:986-1654,668,"Bên cạnh đó, sự phát triển của Machine Learning đã mở ra nhiều hướng tiếp cận
+mới trong việc phân tích hành vi truy cập và nhận diện bot traffic dựa trên dữ liệu thực
+tế. Thay vì chỉ sử dụng các rule cố định, các mô hình học máy có thể học từ dữ liệu để
+phát hiện các mẫu hành vi bất thường một cách linh hoạt và hiệu quả hơn.
+Xuất phát từ những nhu cầu và thách thức trên, đề tài “Xây dựng hệ thống phân
+tích và phát hiện traffic bất thường trong Digital Marketing sử dụng Machine Learning”
+được lựa chọn nhằm phát triển một hệ thống có khả năng thu thập dữ liệu truy cập, phân
+tích hành vi người dùng và ứng dụng AI để phát hiện bot traffic trong môi trường thực tế.",2,"Trọn đoạn: động lực dùng ML và câu nêu tên, mục đích đề tài; kết thúc ở cuối câu."
+pos02,19,814,"gent, session, thời gian truy cập và hành vi người dùng? Hệ thống cần hỗ trợ lưu trữ, quản lý và thống kê dữ liệu traffic nhằm phục vụ cho việc phân t[•]ích truy cập và giám sát hoạt động Digital Marketing. Đồng thời, hệ thống phải đảm bảo khả năng hoạt động ổn định, dễ mở rộng và xử lý được lượng requ",A,A:doan-bot-traffic-2026:p19:451-950,499,"hệ chặt chẽ với nhau.
+Thành phần thứ nhất – Thu thập và phân tích dữ liệu traffic website: Làm thế nào
+để xây dựng một hệ thống có khả năng thu thập dữ liệu truy cập website theo thời gian
+thực, bao gồm IP, user agent, session, thời gian truy cập và hành vi người dùng? Hệ
+thống cần hỗ trợ lưu trữ, quản lý và thống kê dữ liệu traffic nhằm phục vụ cho việc phân
+tích truy cập và giám sát hoạt động Digital Marketing. Đồng thời, hệ thống phải đảm
+bảo khả năng hoạt động ổn định, dễ mở rộng và xử lý đ",1,"Câu tại vị trí đầy đủ và có ngữ cảnh 'Thành phần thứ nhất', nhưng chunk bắt đầu bằng mảnh 'hệ chặt chẽ với nhau.' và cắt ở 'xử lý đ'."
+pos02,19,814,"gent, session, thời gian truy cập và hành vi người dùng? Hệ thống cần hỗ trợ lưu trữ, quản lý và thống kê dữ liệu traffic nhằm phục vụ cho việc phân t[•]ích truy cập và giám sát hoạt động Digital Marketing. Đồng thời, hệ thống phải đảm bảo khả năng hoạt động ổn định, dễ mở rộng và xử lý được lượng requ",B,B:doan-bot-traffic-2026:p19:351-997,646,"1.2. Phát biểu bài toán
+1.2.1. Mô tả bài toán
+Đề tài tập trung vào hai thành phần chính có mối liên hệ chặt chẽ với nhau.
+Thành phần thứ nhất – Thu thập và phân tích dữ liệu traffic website: Làm thế nào
+để xây dựng một hệ thống có khả năng thu thập dữ liệu truy cập website theo thời gian
+thực, bao gồm IP, user agent, session, thời gian truy cập và hành vi người dùng? Hệ
+thống cần hỗ trợ lưu trữ, quản lý và thống kê dữ liệu traffic nhằm phục vụ cho việc phân
+tích truy cập và giám sát hoạt động Digital Marketing. Đồng thời, hệ thống phải đảm
+bảo khả năng hoạt động ổn định, dễ mở rộng và xử lý được lượng request lớn trong môi
+trường thực tế.",2,"Có heading 1.2/1.2.1 và trọn đoạn mô tả thành phần thứ nhất, kết thúc ở cuối câu."
+pos03,26,1508,"ã hội. Facebook, X (Twitter) và Instagram đều sử dụng Machine Learning để phân tích hành vi tài khoản theo thời gian thực. Theo Statista (2024), khoản[•]g 5–15% tài khoản mạng xã hội toàn cầu được nghi ngờ là bot hoặc tài khoản tự động. - Doanh nghiệp và hệ thống nội bộ: Các doanh nghiệp hiện nay sử dụ",A,A:doan-bot-traffic-2026:p26:1350-1850,500,"g mạng xã hội. Facebook,
+X (Twitter) và Instagram đều sử dụng Machine Learning để phân tích hành vi tài
+khoản theo thời gian thực. Theo Statista (2024), khoảng 5–15% tài khoản mạng xã
+hội toàn cầu được nghi ngờ là bot hoặc tài khoản tự động.
+- Doanh nghiệp và hệ thống nội bộ: Các doanh nghiệp hiện nay sử dụng traffic
+analytics để giám sát truy cập bất thường vào hệ thống nội bộ, phát hiện truy cập
+tự động hoặc nguy cơ rò rỉ dữ liệu. Đây cũng là hướng ứng dụng chính của đề tài —
+xây dựng hệ thống",1,"Câu số liệu Statista tại vị trí đầy đủ nhưng mất nhãn mục 'Hệ thống đăng nhập và mạng xã hội' (bắt đầu giữa từ 'g mạng xã hội'), cắt cuối ở '— xây dựng hệ thống'."
+pos03,26,1508,"ã hội. Facebook, X (Twitter) và Instagram đều sử dụng Machine Learning để phân tích hành vi tài khoản theo thời gian thực. Theo Statista (2024), khoản[•]g 5–15% tài khoản mạng xã hội toàn cầu được nghi ngờ là bot hoặc tài khoản tự động. - Doanh nghiệp và hệ thống nội bộ: Các doanh nghiệp hiện nay sử dụ",B,B:doan-bot-traffic-2026:p26:1214-1591,377,"- Hệ thống đăng nhập và mạng xã hội: Bot detection được sử dụng để phát hiện tài
+khoản giả, spam và hành vi tự động hóa trên các nền tảng mạng xã hội. Facebook,
+X (Twitter) và Instagram đều sử dụng Machine Learning để phân tích hành vi tài
+khoản theo thời gian thực. Theo Statista (2024), khoảng 5–15% tài khoản mạng xã
+hội toàn cầu được nghi ngờ là bot hoặc tài khoản tự động.",2,"Trọn mục liệt kê 'Hệ thống đăng nhập và mạng xã hội' kèm số liệu, tự hiểu được."
+pos04,34,603,hống phân tích traffic: - Dễ truy cập: người dùng chỉ cần trình duyệt web để sử dụng hệ thống mà không cần cài đặt phần mềm; - Giám sát realtime: dash[•]board có thể cập nhật traffic và cảnh báo bot gần như theo thời gian thực; - Dễ mở rộng: có thể mở rộng riêng từng service như AI Service hoặc API Ser,A,A:doan-bot-traffic-2026:p34:450-950,500,"ệ thống phân tích traffic:
+- Dễ truy cập: người dùng chỉ cần trình duyệt web để sử dụng hệ thống mà không
+cần cài đặt phần mềm;
+- Giám sát realtime: dashboard có thể cập nhật traffic và cảnh báo bot gần như theo
+thời gian thực;
+- Dễ mở rộng: có thể mở rộng riêng từng service như AI Service hoặc API Service
+khi lượng traffic tăng cao;
+- Dễ triển khai: hệ thống có thể deploy nhanh trên cloud thông qua Docker và Render;
+- Bảo trì thuận tiện: frontend, backend và AI service hoạt động độc lập, giúp d",1,"Mất câu dẫn 'Lợi ích của kiến trúc Web Application…' nên không rõ danh sách là lợi ích của gì; bắt đầu giữa từ 'ệ thống', cắt cuối ở 'giúp d'."
+pos04,34,603,hống phân tích traffic: - Dễ truy cập: người dùng chỉ cần trình duyệt web để sử dụng hệ thống mà không cần cài đặt phần mềm; - Giám sát realtime: dash[•]board có thể cập nhật traffic và cảnh báo bot gần như theo thời gian thực; - Dễ mở rộng: có thể mở rộng riêng từng service như AI Service hoặc API Ser,B,B:doan-bot-traffic-2026:p34:0-785,785,"learn nhằm xử lý dữ liệu traffic và chạy mô hình Machine Learning để phát hiện
+bot bất thường. API Service sử dụng Golang nhằm tăng hiệu năng xử lý request và
+hỗ trợ thu thập dữ liệu realtime từ website.
+Hệ thống sử dụng MySQL để lưu trữ dữ liệu traffic, session và kết quả phân tích.
+Các service được triển khai độc lập trên nền tảng cloud như Render thông qua Docker,
+giúp dễ dàng mở rộng và bảo trì.
+Lợi ích của kiến trúc Web Application đối với hệ thống phân tích traffic:
+- Dễ truy cập: người dùng chỉ cần trình duyệt web để sử dụng hệ thống mà không
+cần cài đặt phần mềm;
+- Giám sát realtime: dashboard có thể cập nhật traffic và cảnh báo bot gần như theo
+thời gian thực;
+- Dễ mở rộng: có thể mở rộng riêng từng service như AI Service hoặc API Service
+khi lượng traffic tăng cao;",1,"Có câu dẫn và mục 'Giám sát realtime' trọn vẹn, nhưng chunk mở đầu bằng mảnh nối từ trang 33 ('learn nhằm xử lý…', thiếu chủ ngữ AI Service) và danh sách 5 lợi ích bị tách sang chunk sau."
+pos05,43,932,a. Dữ liệu nhập không hợp lệ. Hệ thống thông báo lỗi tại các trường bắt buộc. 6a. Email không tồn tại. Hệ thống thông báo tài khoản không tồn tại. 7a.[•] Mật khẩu không chính xác. Hệ thống thông báo sai mật khẩu. 8a. Tài khoản bị khóa hoặc vô hiệu hóa. Hệ thống thông báo tài khoản không khả dụng. Chức,A,A:doan-bot-traffic-2026:p43:450-950,500,"p.
+3. Người dùng nhập email và mật khẩu.
+4. Người dùng nhấn nút đăng nhập.
+5. Hệ thống kiểm tra tính hợp lệ của dữ liệu.
+6. Hệ thống kiểm tra thông tin tài khoản trong cơ sở dữ liệu.
+7. Hệ thống xác thực mật khẩu.
+8. Hệ thống tạo phiên đăng nhập và cấp JWT token.
+9. Hệ thống chuyển người dùng đến trang dashboard.
+Luồng ngoại lệ:
+5a. Dữ liệu nhập không hợp lệ. Hệ thống thông báo lỗi tại các
+trường bắt buộc.
+6a. Email không tồn tại. Hệ thống thông báo tài khoản không tồn
+tại.
+7a. Mật khẩu không ch",0,"Ngoại lệ tại vị trí bị cắt ('7a. Mật khẩu không ch'), mất phản hồi của hệ thống; thiếu tên use case (Đăng nhập) và bước 1–2."
+pos05,43,932,a. Dữ liệu nhập không hợp lệ. Hệ thống thông báo lỗi tại các trường bắt buộc. 6a. Email không tồn tại. Hệ thống thông báo tài khoản không tồn tại. 7a.[•] Mật khẩu không chính xác. Hệ thống thông báo sai mật khẩu. 8a. Tài khoản bị khóa hoặc vô hiệu hóa. Hệ thống thông báo tài khoản không khả dụng. Chức,B,B:doan-bot-traffic-2026:p43:765-1550,785,"Luồng ngoại lệ:
+5a. Dữ liệu nhập không hợp lệ. Hệ thống thông báo lỗi tại các
+trường bắt buộc.
+6a. Email không tồn tại. Hệ thống thông báo tài khoản không tồn
+tại.
+7a. Mật khẩu không chính xác. Hệ thống thông báo sai mật khẩu.
+8a. Tài khoản bị khóa hoặc vô hiệu hóa. Hệ thống thông báo tài
+khoản không khả dụng.
+Chức năng Xem Dashboard Traffic
+Bảng 2.3.Bảng đặc tả use case chức năng Xem Dashboard Traffic
+Tên use case: Xem dashboard traffic
+Tác nhân chính: Người dùng
+Mục tiêu: Theo dõi tổng quan lưu lượng truy cập website
+Điều kiện tiên
+quyết:
+Người dùng đã đăng nhập hệ thống
+Điều kiện hậu: Dashboard traffic được hiển thị thành công
+Luồng sự kiện
+chính:
+1. Người dùng truy cập trang dashboard.
+2. Hệ thống gửi yêu cầu lấy dữ liệu traffic.
+3. Hệ thống truy vấn dữ liệu từ database.",1,Luồng ngoại lệ 5a–8a trọn vẹn nhưng thiếu tên use case Đăng nhập (ở chunk trước); chunk trộn sang use case Xem Dashboard Traffic và cắt ở bước 3.
+pos06,51,1349,"hình Machine Learning. Tầng AI/ML Layer thực hiện các tác vụ liên quan đến Machine Learning. Feature Engineering đảm nhiệm việc trích xuất các đặc trư[•]ng từ dữ liệu traffic như tần suất request, thời gian truy cập, hành vi session và User-Agent. ML Model Server được xây dựng bằng Python FastAPI, chịu",A,A:doan-bot-traffic-2026:p51:900-1400,500,"ge chịu trách nhiệm lưu trữ dữ liệu của hệ thống. User DB lưu
+thông tin người dùng và phân quyền; Traffic Data DB lưu log truy cập và session; Detection Result DB lưu kết quả phát hiện bot traffic, IP đáng ngờ và điểm rủi ro. Ngoài ra,
+File Storage được sử dụng để lưu report, log export và file mô hình Machine Learning.
+Tầng AI/ML Layer thực hiện các tác vụ liên quan đến Machine Learning. Feature
+Engineering đảm nhiệm việc trích xuất các đặc trưng từ dữ liệu traffic như tần suất
+request, thời gi",1,Ý chính (Feature Engineering trích xuất đặc trưng) hiểu được nhưng câu tại vị trí bị cắt ở 'thời gi'; chunk bắt đầu giữa từ 'ge' (Storage).
+pos06,51,1349,"hình Machine Learning. Tầng AI/ML Layer thực hiện các tác vụ liên quan đến Machine Learning. Feature Engineering đảm nhiệm việc trích xuất các đặc trư[•]ng từ dữ liệu traffic như tần suất request, thời gian truy cập, hành vi session và User-Agent. ML Model Server được xây dựng bằng Python FastAPI, chịu",B,B:doan-bot-traffic-2026:p51:1222-1910,688,"Tầng AI/ML Layer thực hiện các tác vụ liên quan đến Machine Learning. Feature
+Engineering đảm nhiệm việc trích xuất các đặc trưng từ dữ liệu traffic như tần suất
+request, thời gian truy cập, hành vi session và User-Agent. ML Model Server được xây
+dựng bằng Python FastAPI, chịu trách nhiệm chạy mô hình học máy để phân loại bot
+traffic và trả về kết quả dự đoán cùng mức độ rủi ro. Các mô hình đã huấn luyện được
+lưu trong Model Storage để phục vụ inference và cập nhật sau này.
+Ngoài ra, hệ thống còn tích hợp các External Services như Email Service, Telegram
+Bot, Payment Gateway, ELK Stack và Prometheus + Grafana nhằm hỗ trợ cảnh báo,
+logging, monitoring và quản lý vận hành hệ thống.",2,"Trọn đoạn mô tả tầng AI/ML Layer, kết thúc ở cuối câu."
+pos07,58,1299,"Machine Learning. Các thư viện như pandas và NumPy hỗ trợ làm sạch dữ liệu, tính toán feature và chuyển đổi dữ liệu traffic thành vector số. scikit-le[•]arn được dùng để huấn luyện mô hình Random Forest vì thư viện này ổn định, dễ sử dụng và phù hợp với dữ liệu dạng bảng của bài toán bot detection. Fla",A,A:doan-bot-traffic-2026:p58:900-1399,499,"rvice này có thể bổ sung hàng đợi như Kafka hoặc RabbitMQ để đẩy log sang pipeline
+xử lý bất đồng bộ.
+2.7.5. AI Service: Python, Flask, scikit-learn, pandas và NumPy
+Python được lựa chọn cho AI Service vì là ngôn ngữ phổ biến trong xử lý dữ liệu
+và Machine Learning. Các thư viện như pandas và NumPy hỗ trợ làm sạch dữ liệu, tính
+toán feature và chuyển đổi dữ liệu traffic thành vector số. scikit-learn được dùng để huấn
+luyện mô hình Random Forest vì thư viện này ổn định, dễ sử dụng và phù hợp với",1,"Câu tại vị trí bị cắt cuối ('phù hợp với'), mất lý do 'dữ liệu dạng bảng'; chunk trộn câu cuối của mục 2.7.4 và bắt đầu giữa từ 'rvice'."
+pos07,58,1299,"Machine Learning. Các thư viện như pandas và NumPy hỗ trợ làm sạch dữ liệu, tính toán feature và chuyển đổi dữ liệu traffic thành vector số. scikit-le[•]arn được dùng để huấn luyện mô hình Random Forest vì thư viện này ổn định, dễ sử dụng và phù hợp với dữ liệu dạng bảng của bài toán bot detection. Fla",B,B:doan-bot-traffic-2026:p58:1002-1793,791,"2.7.5. AI Service: Python, Flask, scikit-learn, pandas và NumPy
+Python được lựa chọn cho AI Service vì là ngôn ngữ phổ biến trong xử lý dữ liệu
+và Machine Learning. Các thư viện như pandas và NumPy hỗ trợ làm sạch dữ liệu, tính
+toán feature và chuyển đổi dữ liệu traffic thành vector số. scikit-learn được dùng để huấn
+luyện mô hình Random Forest vì thư viện này ổn định, dễ sử dụng và phù hợp với dữ
+liệu dạng bảng của bài toán bot detection.
+Flask được sử dụng để đóng gói mô hình thành API độc lập. Backend có thể gửi
+feature vector sang endpoint dự đoán và nhận lại nhãn bot/human cùng confidence. Việc
+tách AI Service khỏi Backend giúp mô hình có thể được cập nhật, huấn luyện lại hoặc
+thay đổi thuật toán mà không ảnh hưởng trực tiếp đến các chức năng quản trị người dùng
+và dashboard.",2,"Trọn mục 2.7.5 (heading, lý do chọn Python, scikit-learn, Flask)."
+pos08,66,1260,"ng pipeline từ dữ liệu thô đến mô hình dự đoán, giúp minh họa rõ cách ML có thể được ứng dụng vào bài toán Digital Marketing. Mặt hạn chế chính là dữ [•]liệu thực nghiệm chưa đủ lớn và chưa phản ánh đầy đủ các kiểu bot tinh vi trong môi trường thực tế. Vì vậy, kết quả hiện tại nên được xem là cơ sở ban",A,A:doan-bot-traffic-2026:p66:900-1400,500,"hống nhất.
+Giá trị nổi bật của đề tài nằm ở việc kết hợp giữa kỹ thuật phần mềm và học máy.
+Về kỹ thuật phần mềm, hệ thống sử dụng kiến trúc tách service để dễ phát triển và mở
+rộng. Về học máy, hệ thống xây dựng pipeline từ dữ liệu thô đến mô hình dự đoán, giúp
+minh họa rõ cách ML có thể được ứng dụng vào bài toán Digital Marketing.
+Mặt hạn chế chính là dữ liệu thực nghiệm chưa đủ lớn và chưa phản ánh đầy đủ các
+kiểu bot tinh vi trong môi trường thực tế. Vì vậy, kết quả hiện tại nên được xem là",1,Câu nêu hạn chế tại vị trí đầy đủ nhưng chunk bắt đầu bằng mảnh 'hống nhất.' và cắt ở 'nên được xem là'.
+pos08,66,1260,"ng pipeline từ dữ liệu thô đến mô hình dự đoán, giúp minh họa rõ cách ML có thể được ứng dụng vào bài toán Digital Marketing. Mặt hạn chế chính là dữ [•]liệu thực nghiệm chưa đủ lớn và chưa phản ánh đầy đủ các kiểu bot tinh vi trong môi trường thực tế. Vì vậy, kết quả hiện tại nên được xem là cơ sở ban",B,B:doan-bot-traffic-2026:p66:1236-1583,347,"Mặt hạn chế chính là dữ liệu thực nghiệm chưa đủ lớn và chưa phản ánh đầy đủ các
+kiểu bot tinh vi trong môi trường thực tế. Vì vậy, kết quả hiện tại nên được xem là cơ sở
+ban đầu. Để triển khai trong sản phẩm thật, hệ thống cần thu thập thêm dữ liệu, đánh giá
+trên traffic thực, bổ sung cơ chế giám sát drift và quy trình cập nhật mô hình định kỳ.",2,"Trọn đoạn nêu hạn chế, hệ quả và việc cần làm; tự hiểu được."
+pos09,73,1097,ử lý Báo cáo Đạt cơ bản Có định hướng xuất báo cáo traffic Mở rộng template và định dạng xuất 3.17. Bài học rút ra từ quá trình thực nghiệm Quá trình [•]thực nghiệm cho thấy việc xây dựng hệ thống phát hiện bot traffic không thể tách rời giữa kỹ thuật phần mềm và Machine Learning. Nếu chỉ có mô hình tố,A,A:doan-bot-traffic-2026:p73:900-1400,500,"g log,
+cảnh báo
+Thêm drill-down và
+trạng thái xử lý
+Báo cáo Đạt cơ bản Có định hướng xuất báo
+cáo traffic
+Mở rộng template và
+định dạng xuất
+3.17. Bài học rút ra từ quá trình thực nghiệm
+Quá trình thực nghiệm cho thấy việc xây dựng hệ thống phát hiện bot traffic không
+thể tách rời giữa kỹ thuật phần mềm và Machine Learning. Nếu chỉ có mô hình tốt nhưng
+pipeline dữ liệu thiếu ổn định, kết quả dự đoán sẽ không đáng tin cậy. Ngược lại, nếu hệ
+thống thu thập và lưu trữ dữ liệu tốt nhưng feature chưa",1,Câu tại vị trí đầy đủ nhưng chunk mở đầu bằng các ô bảng 3.16 không có tiêu đề cột và câu cuối bị cắt ở 'feature chưa'.
+pos09,73,1097,ử lý Báo cáo Đạt cơ bản Có định hướng xuất báo cáo traffic Mở rộng template và định dạng xuất 3.17. Bài học rút ra từ quá trình thực nghiệm Quá trình [•]thực nghiệm cho thấy việc xây dựng hệ thống phát hiện bot traffic không thể tách rời giữa kỹ thuật phần mềm và Machine Learning. Nếu chỉ có mô hình tố,B,B:doan-bot-traffic-2026:p73:1041-1834,793,"3.17. Bài học rút ra từ quá trình thực nghiệm
+Quá trình thực nghiệm cho thấy việc xây dựng hệ thống phát hiện bot traffic không
+thể tách rời giữa kỹ thuật phần mềm và Machine Learning. Nếu chỉ có mô hình tốt nhưng
+pipeline dữ liệu thiếu ổn định, kết quả dự đoán sẽ không đáng tin cậy. Ngược lại, nếu hệ
+thống thu thập và lưu trữ dữ liệu tốt nhưng feature chưa phản ánh đúng hành vi truy cập,
+mô hình cũng khó phát hiện chính xác bot traffic.
+Bài học quan trọng nhất là cần thiết kế dữ liệu ngay từ đầu theo mục tiêu phân tích.
+Các trường như session_id, timestamp, request_url, user_agent và http_status phải được
+ghi nhất quán để có thể tính feature về sau. Ngoài ra, việc lưu riêng dữ liệu thô, dữ liệu
+feature và kết quả dự đoán giúp hệ thống dễ kiểm tra sai lệch khi có kết quả bất thường.",2,Trọn mục 3.17 từ heading đến hết đoạn.
+pos10,86,495,"biệt là phân tích sequence URL, thời gian tương tác và hành vi điều hướng. Về kiến trúc, hệ thống nên tích hợp message queue như Kafka hoặc RabbitMQ,[•] cơ chế batch prediction, monitoring bằng Prometheus/Grafana và quy trình CI/CD để triển khai ổn định hơn. Ngoài ra, dashboard có thể bổ sung cảnh báo",A,A:doan-bot-traffic-2026:p86:0-500,500,"rule ban đầu, kiểm tra thủ công và phản hồi từ quản trị viên để cải thiện chất lượng dữ
+liệu huấn luyện.
+Hệ thống cũng có thể bổ sung thêm các mô hình như XGBoost, LightGBM, Isolation Forest và các kỹ thuật ensemble để so sánh hiệu quả với Random Forest. Khi dữ
+liệu đủ lớn, có thể nghiên cứu thêm mô hình học sâu cho chuỗi hành vi truy cập, đặc biệt
+là phân tích sequence URL, thời gian tương tác và hành vi điều hướng.
+Về kiến trúc, hệ thống nên tích hợp message queue như Kafka hoặc RabbitMQ, cơ
+c",1,"Câu tại vị trí bị cắt ở 'cơ c' nên mất các đề xuất batch prediction, monitoring, CI/CD; chunk mở đầu bằng mảnh nối từ trang 85."
+pos10,86,495,"biệt là phân tích sequence URL, thời gian tương tác và hành vi điều hướng. Về kiến trúc, hệ thống nên tích hợp message queue như Kafka hoặc RabbitMQ,[•] cơ chế batch prediction, monitoring bằng Prometheus/Grafana và quy trình CI/CD để triển khai ổn định hơn. Ngoài ra, dashboard có thể bổ sung cảnh báo",B,B:doan-bot-traffic-2026:p86:0-744,744,"rule ban đầu, kiểm tra thủ công và phản hồi từ quản trị viên để cải thiện chất lượng dữ
+liệu huấn luyện.
+Hệ thống cũng có thể bổ sung thêm các mô hình như XGBoost, LightGBM, Isolation Forest và các kỹ thuật ensemble để so sánh hiệu quả với Random Forest. Khi dữ
+liệu đủ lớn, có thể nghiên cứu thêm mô hình học sâu cho chuỗi hành vi truy cập, đặc biệt
+là phân tích sequence URL, thời gian tương tác và hành vi điều hướng.
+Về kiến trúc, hệ thống nên tích hợp message queue như Kafka hoặc RabbitMQ, cơ
+chế batch prediction, monitoring bằng Prometheus/Grafana và quy trình CI/CD để triển
+khai ổn định hơn. Ngoài ra, dashboard có thể bổ sung cảnh báo realtime, phân tích theo
+chiến dịch marketing và chức năng xuất báo cáo chi tiết cho từng website.",1,"Câu đề xuất kiến trúc tại vị trí trọn vẹn, nhưng chunk mở đầu bằng mảnh nối từ trang 85 ('rule ban đầu, …', thiếu chủ ngữ) và thiếu tiêu đề 'Hướng phát triển' ở trang trước."

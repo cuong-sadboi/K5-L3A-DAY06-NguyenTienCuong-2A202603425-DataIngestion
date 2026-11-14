@@ -1,3 +1,56 @@
+# Bài làm Day 06 · Nguyễn Tiến Cường · 2A202603425
+
+- **Corpus:** đồ án tốt nghiệp của chính học viên về phát hiện bot traffic (PDF 89 trang, tính 69 trang nội dung tiếng Việt).
+- **Embedding:** `intfloat/multilingual-e5-base`, chạy local, 768 chiều.
+- **Vector store:** PostgreSQL 16 + pgvector 0.8.7, khoảng cách cosine, tìm kiếm chính xác.
+- **Chiến lược:** A cửa sổ 500/50 · B theo mục/đoạn, tối đa 800 ký tự · C = B + filter `chapter`. **C được chọn trên dev.**
+- **Báo cáo:** [report/individual/2A202603425_NguyenTienCuong.md](report/individual/2A202603425_NguyenTienCuong.md)
+
+## Chạy lại (Windows PowerShell, Python 3.14)
+
+Chạy trong thư mục `starter/`, với Docker Desktop đang chạy:
+
+```powershell
+py -3.14 -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+Copy-Item .env.example .env
+docker compose -p day6_student_starter up -d --wait
+python scripts/check_setup.py
+```
+
+PDF gốc không có trong repo vì trang bìa có thông tin cá nhân. Đặt file `K21.KTPM_Nguyễn Tiến Cường.pdf` vào `starter/data/` (đối chiếu sha256 ghi trong `data/manifest.json`), rồi chạy:
+
+```powershell
+python -m src.ingestion           # đọc PDF -> data/manifest.json, results/ingestion_pages.csv
+python -m src.benchmark           # kiểm tra 24 câu hỏi và evidence
+python -m src.indexing            # nạp index A, B vào pgvector
+python scripts/check_reingest.py  # kiểm tra nạp lại và tài liệu bị sửa, trên index tạm
+python -m src.run dev             # chạy dev, chọn chiến lược theo tiêu chí ghi trước
+python -m src.run test            # chỉ chạy được sau khi đã chốt trên dev
+python -m src.run audit           # tổng hợp phiếu chấm tay
+python -m src.search "Frontend Dashboard dùng công nghệ gì?" --chapter 2
+```
+
+Lần chạy đầu, `sentence-transformers` tải model (khoảng 1 GB) từ Hugging Face.
+
+## Bản đồ file
+
+| Đường dẫn | Nội dung |
+|---|---|
+| `starter/src/` | Pipeline: `ingestion`, `chunking`, `embeddings`, `store`, `indexing`, `search`, `benchmark`, `evaluation`, `run`; cấu hình trong `config.py` |
+| `data/manifest.json` | Nguồn, quyền, sha256, các trang được tính và lý do loại từng trang |
+| `benchmark/` | 24 câu hỏi (18 dev / 6 test), gold, evidence, ghi chú cách chia tập |
+| `artifacts/experiment_log.csv` | Cấu hình, giả thuyết và Hit@1/Hit@3 của A/B/C |
+| `results/index_stats.json`, `index_runs.jsonl`, `reingest_check.json` | Số chunk, độ dài, token, thời gian, kiểm tra nạp lại |
+| `results/chunks/` | Toàn bộ chunk của index A và B |
+| `results/traces/`, `results/metrics_*`, `results/selection.json` | Trace top-3, chỉ số dev/test, lựa chọn chiến lược |
+| `results/audit/`, `results/audit_summary.json` | Phiếu chấm coherence, metadata, grounding và bản tổng hợp |
+
+Phần dưới đây là đề bài gốc.
+
+---
+
 # Day 06 · Data Ingestion Engineering
 
 **Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**
