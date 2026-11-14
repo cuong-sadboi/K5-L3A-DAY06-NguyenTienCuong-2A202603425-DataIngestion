@@ -1,0 +1,272 @@
+{
+  "validated_at": "2026-11-13T19:06:42+07:00",
+  "questions_file": "benchmark/questions.jsonl",
+  "questions_sha256": "5f5613d48d0db3c051017996750ebb0cd924ddfa445664fc2d2c8502e48634d3",
+  "summary": {
+    "questions": 24,
+    "valid_questions": 24,
+    "splits": {
+      "dev": 18,
+      "test": 6
+    },
+    "with_filter": 8,
+    "with_filter_by_split": {
+      "dev": 6,
+      "test": 2
+    },
+    "types": {
+      "truc_tiep": 11,
+      "dien_dat_lai": 9,
+      "dieu_kien": 4
+    }
+  },
+  "requirements": [
+    {
+      "rule": "≥ 20 câu",
+      "value": 24,
+      "ok": true
+    },
+    {
+      "rule": "≥ 15 câu dev",
+      "value": 18,
+      "ok": true
+    },
+    {
+      "rule": "≥ 5 câu test",
+      "value": 6,
+      "ok": true
+    },
+    {
+      "rule": "≥ 3 câu có filter",
+      "value": 8,
+      "ok": true
+    },
+    {
+      "rule": "≥ 1 câu có filter ở test",
+      "value": 2,
+      "ok": true
+    }
+  ],
+  "recommendations": [
+    {
+      "rule": "nên có ≥ 5 câu filter",
+      "value": 8,
+      "ok": true
+    },
+    {
+      "rule": "nên có ≥ 2 câu filter ở test",
+      "value": 2,
+      "ok": true
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "line": 1,
+      "split": "dev",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q02",
+      "line": 2,
+      "split": "dev",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q03",
+      "line": 3,
+      "split": "dev",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q04",
+      "line": 4,
+      "split": "dev",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q05",
+      "line": 5,
+      "split": "dev",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q06",
+      "line": 6,
+      "split": "dev",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q07",
+      "line": 7,
+      "split": "dev",
+      "filter": {
+        "chapter": 1
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q08",
+      "line": 8,
+      "split": "dev",
+      "filter": {
+        "chapter": 3
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q09",
+      "line": 9,
+      "split": "dev",
+      "filter": {
+        "chapter": 1
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q10",
+      "line": 10,
+      "split": "dev",
+      "filter": {
+        "chapter": 2
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q11",
+      "line": 11,
+      "split": "dev",
+      "filter": {
+        "chapter": 2
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q12",
+      "line": 12,
+      "split": "dev",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q13",
+      "line": 13,
+      "split": "dev",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q14",
+      "line": 14,
+      "split": "dev",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q15",
+      "line": 15,
+      "split": "dev",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q16",
+      "line": 16,
+      "split": "dev",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q17",
+      "line": 17,
+      "split": "dev",
+      "filter": {
+        "chapter": 1
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q18",
+      "line": 18,
+      "split": "dev",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q19",
+      "line": 19,
+      "split": "test",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q20",
+      "line": 20,
+      "split": "test",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q21",
+      "line": 21,
+      "split": "test",
+      "filter": {
+        "chapter": 3
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q22",
+      "line": 22,
+      "split": "test",
+      "filter": {
+        "chapter": 2
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q23",
+      "line": 23,
+      "split": "test",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "q24",
+      "line": 24,
+      "split": "test",
+      "filter": null,
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

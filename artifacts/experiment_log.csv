@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size (cửa sổ ký tự),500,50,"document_id, source, page, chapter, section, section_title, char_start, char_end",không,"intfloat/multilingual-e5-base (local, 768 chiều, cosine)","Baseline: cửa sổ cố định dễ cắt đôi câu và evidence, nên Evidence Hit@3 và coherence thấp hơn B.",8/18,12/18,2/6,3/6,"Index A, 337 chunk"
+B,by_paragraph (mục -> đoạn -> câu),tối đa 800,0,"document_id, source, page, chapter, section, section_title, char_start, char_end",không,"intfloat/multilingual-e5-base (local, 768 chiều, cosine)","Cắt theo mục/đoạn giữ trọn ý: Evidence Hit@3 và coherence cao hơn A, rõ nhất ở câu diễn đạt lại và câu điều kiện.",9/18,15/18,4/6,4/6,"Index B, 254 chunk"
+C,giống B (dùng chung index B),tối đa 800,0,"document_id, source, page, chapter, section, section_title, char_start, char_end",chapter (chỉ khi câu hỏi có filter),"intfloat/multilingual-e5-base (local, 768 chiều, cosine)","Như B ở câu không có filter; ở 8 câu có filter, lọc theo chương giảm lấy nhầm nội dung lặp giữa các chương nên Hit@1/Hit@3 cao hơn B.",11/18,17/18,4/6,4/6,Chỉ khác B ở metadata filter lúc truy vấn

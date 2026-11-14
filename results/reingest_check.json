@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-11-14T09:08:12+07:00",
+  "command": "python scripts/check_reingest.py",
+  "temp_index": "ZZ_REINGEST_CHECK",
+  "pages_used": [
+    11,
+    12,
+    13
+  ],
+  "steps": {
+    "1_nap_moi": {
+      "chunks": 12,
+      "inserted": 12,
+      "updated": 0,
+      "unchanged": 0,
+      "deleted": 0,
+      "rows_in_db": 12,
+      "rows_match_chunks": true,
+      "embed_seconds": 1.62,
+      "sync_seconds": 1.64
+    },
+    "2_nap_lai_y_nguyen": {
+      "chunks": 12,
+      "inserted": 0,
+      "updated": 0,
+      "unchanged": 12,
+      "deleted": 0,
+      "rows_in_db": 12,
+      "rows_match_chunks": true,
+      "embed_seconds": 0.0,
+      "sync_seconds": 0.01
+    },
+    "3_sua_trang_2_bo_trang_3": {
+      "chunks": 9,
+      "inserted": 1,
+      "updated": 0,
+      "unchanged": 8,
+      "deleted": 4,
+      "rows_in_db": 9,
+      "rows_match_chunks": true,
+      "embed_seconds": 0.07,
+      "sync_seconds": 0.08
+    }
+  },
+  "temp_rows_removed": 9,
+  "checks": {
+    "nap_lai_khong_them_sua_xoa": true,
+    "nap_lai_so_dong_khop": true,
+    "sua_tai_lieu_co_them_va_xoa": true,
+    "sua_tai_lieu_so_dong_khop": true,
+    "index_that_khong_doi": true
+  },
+  "passed": true
+}

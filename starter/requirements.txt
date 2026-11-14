@@ -2,3 +2,10 @@
 psycopg[binary]==3.3.8
 pypdf>=5,<7
 python-dotenv>=1,<2
+
+# Embedding local và adapter pgvector: đúng phiên bản đã dùng khi chạy (Python 3.14.10, Windows, CPU)
+pgvector==0.5.1
+sentence-transformers==6.3.0
+transformers==5.22.2
+torch==2.15.0
+numpy==2.5.4

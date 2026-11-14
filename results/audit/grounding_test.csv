@@ -1,0 +1,701 @@
+﻿strategy,question_id,question,expected_answer,gold_pages,evidence_quote,top1,top2,top3,auto_hit_at_3,grounding_0_1_2,reason
+A,q19,Hệ thống của đề tài ưu tiên phát hiện bot hợp lệ hay bot độc hại?,Bot độc hại (bad bot traffic).,23,Đề tài tập trung chủ yếu vào việc phát hiện bad bot traffic.,"[trang 23 | chương 1 | mục 1.5.1] ebot, Bingbot phục vụ
+lập chỉ mục tìm kiếm) và Bad Bot (bot độc hại dùng để spam, click ảo quảng cáo,
+crawling trái phép hoặc tấn công hệ thống). Đề tài tập trung chủ yếu vào việc phát
+hiện bad bot traffic.
+- Theo phương pháp phát hiện: Rule-based Detection (dựa trên luật cố định như
+blacklist IP, user-agent), Statistical-based Detection (dựa trên thống kê hành vi
+truy cập) và Machine Learning-based Detection (sử dụng mô hình ML để học và
+phân loại hành vi traffic). Hệ thống trong đề tài áp dụng","[trang 11 | chương None | mục MỞ ĐẦU] hức trên, đề tài “Xây dựng hệ thống phân
+tích và phát hiện traffic bất thường trong Digital Marketing sử dụng Machine Learning”
+được lựa chọn nhằm phát triển một hệ thống có khả năng thu thập dữ liệu truy cập, phân
+tích hành vi người dùng và ứng dụng AI để phát hiện bot traffic trong môi trường thực tế.
+Đề tài không chỉ mang ý nghĩa thực tiễn trong lĩnh vực Digital Marketing mà còn giúp
+tiếp cận và ứng dụng các công nghệ hiện đại như Microservice Architecture, Machine
+Learning và phân tích dữ li","[trang 79 | chương 3 | mục 3.23] p trong
+phạm vi
+demo
+Thấp đến
+trung bình
+Cao hơn, tùy
+gói dịch vụ
+Thấp
+Giải thích kết
+quả theo session
+Có thể bổ
+sung feature
+importance
+Hạn chế Có nhưng
+phụ thuộc
+nền tảng
+Dễ hiểu
+nhưng thiếu
+linh hoạt
+Phù hợp
+nghiên
+cứu/học tập
+Rất phù hợp Chỉ phù hợp
+phân tích số
+liệu
+Khó can
+thiệp sâu
+Phù hợp mức
+cơ bản
+Khả năng
+phát hiện bot
+mới
+Có thể cải
+thiện bằng
+retraining
+Không phải
+trọng tâm
+Mạnh Yếu nếu
+không cập
+nhật luật
+Qua so sánh, hệ thống đề tài không nhằm thay thế hoàn toàn các nền tảng bảo
+v",1,2,"#1 (trang 23, mục 1.5.1) chứa 'Đề tài tập trung chủ yếu vào việc phát hiện bad bot traffic' kèm định nghĩa Good/Bad Bot."
+A,q20,"Khi người dùng thật bị nghi là bot vì có hành vi bất thường nhưng hợp lệ, hệ thống nên xử lý thế nào?",Không tự động chặn ngay mà đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm.,64,hệ thống không nên tự động chặn ngay mà nên đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm,"[trang 64 | chương 3 | mục 3.5] là bot. Trường hợp này ảnh hưởng trực tiếp đến trải nghiệm người dùng và có thể khiến
+doanh nghiệp bỏ qua traffic hợp lệ. False negative xảy ra khi bot bị dự đoán là người
+dùng thật, làm dữ liệu thống kê tiếp tục bị nhiễu và ảnh hưởng đến quyết định marketing.
+Các false positive thường xuất hiện khi người dùng thật có hành vi bất thường
+nhưng hợp lệ, ví dụ tải lại trang liên tục, mở nhiều tab trong thời gian ngắn hoặc truy cập
+qua mạng có IP dùng chung. Trong trường hợp này, hệ thống không nên t","[trang 20 | chương 1 | mục 1.2.3] c giữa người dùng thật và bot traffic dựa
+trên dữ liệu hành vi truy cập. Hệ thống hướng đến độ chính xác (Accuracy) trên 85%,
+đồng thời đảm bảo các chỉ số Precision, Recall và F1-score ở mức ổn định nhằm hạn chế
+false positive và false negative. Khi phát hiện traffic bất thường, hệ thống phải cung cấp
+thông tin rõ ràng về mức độ nghi ngờ và đặc trưng dẫn đến kết quả phân loại.","[trang 64 | chương 3 | mục 3.5] chung. Trong trường hợp này, hệ thống không nên tự động chặn
+ngay mà nên đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm. Việc hiển thị
+confidence và feature nổi bật giúp giảm rủi ro ra quyết định sai.
+Các false negative thường liên quan đến bot tinh vi có tốc độ request thấp, user-agent giống trình duyệt thật và thời gian tương tác được làm ngẫu nhiên. Để giảm loại lỗi
+này, hệ thống cần bổ sung thêm feature hành vi như chuỗi điều hướng, tương tác chuột,
+scroll depth, fingerprint thiế",1,2,#3 (trang 64) chứa cách xử lý 'không nên tự động chặn ngay… danh sách nghi ngờ'; điều kiện nằm ở #1 cùng trang (#1 bị cắt ngay trước câu trả lời); ghép hai chunk thì đủ.
+A,q21,"Trong chương 3, mô hình Random Forest đạt Accuracy bao nhiêu trên tập kiểm thử?","Khoảng 93,85% (dự đoán đúng 1.877/2.000 mẫu).","75, 77","mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy khoảng 93,85%","[trang 75 | chương 3 | mục 3.19] uracy
+khoảng 93,85%. Với lớp bot, Precision đạt khoảng 88,94%, nghĩa là trong các session bị
+đánh dấu là bot, phần lớn thực sự có hành vi bất thường. Recall của lớp bot đạt khoảng
+91,90%, cho thấy mô hình phát hiện được đa số bot trong tập kiểm thử. F1-score của lớp
+bot đạt khoảng 90,40%, thể hiện sự cân bằng tương đối tốt giữa khả năng phát hiện bot
+và hạn chế cảnh báo nhầm.
+Bảng 3.19.Tổng hợp chỉ số đánh giá mô hình Random Forest
+Chỉ số Giá trị Ý nghĩa trong hệ thống
+Accuracy 93,85% Tỷ lệ dự đ","[trang 28 | chương 1 | mục 1.6.3] g thật. Kết quả thực nghiệm
+trên tập dữ liệu demo cho thấy mô hình Random Forest đạt độ chính xác khoảng 91%,
+cao hơn đáng kể so với phương pháp rule-based truyền thống.","[trang 76 | chương 3 | mục 3.19] Precision (Bot) 88,94% Mức độ tin cậy của các cảnh
+báo bot
+Recall (Bot) 91,90% Khả năng phát hiện bot thật
+trong dữ liệu
+F1-score (Bot) 90,40% Cân bằng giữa Precision và
+Recall của lớp bot
+False Positive Rate 5,26% Tỷ lệ người dùng thật bị cảnh
+báo nhầm
+False Negative Rate 8,10% Tỷ lệ bot chưa được phát hiện
+Kết quả này cho thấy Random Forest phù hợp với dữ liệu dạng bảng của đề tài.
+Tuy nhiên, các chỉ số vẫn cần được hiểu trong giới hạn của dataset thử nghiệm. Khi triển
+khai thực tế, mô hình cầ",0,2,"Bằng chứng tương đương: #1 (trang 75, mục 3.19) có 'Accuracy khoảng 93,85%' và dòng 'Accuracy 93,85%' của Bảng 3.19 (Random Forest); câu evidence gốc bị cắt nên Hit@3 tự động tính trượt. #2 (chương 1, trang 28) nêu 91% trên dữ liệu demo, dễ gây nhầm nếu không xem chương."
+A,q22,"Trong chương 2, yêu cầu phi chức năng về hiệu năng quy định thời gian phản hồi API tối đa là bao lâu?",Không quá 2 giây đối với các request thông thường.,38,Thời gian phản hồi API≤2 giây đối với các request thông thường.,"[trang 38 | chương 2 | mục 2.2.1] - Thống kê hiệu suất mô hình Machine Learning.
+2.2.2. Yêu cầu phi chức năng
+Bên cạnh yêu cầu chức năng, hệ thống phát hiện bot traffic phải đáp ứng các yêu
+cầu phi chức năng sau:
+Hiệu năng
+Hệ thống phải có khả năng xử lý và ghi nhận traffic theo thời gian thực với độ trễ
+thấp. Thời gian phản hồi API≤2 giây đối với các request thông thường. Dashboard cập
+nhật dữ liệu traffic gần realtime nhằm hỗ trợ quản trị viên giám sát nhanh chóng. Hệ
+thống cần xử lý được nhiều request đồng thời mà không ảnh h","[trang 72 | chương 3 | mục 3.16] ầu về thời gian phản
+hồi cơ bản được đáp ứng với quy mô nhỏ, nhưng khi traffic tăng cao cần bổ sung batch","[trang 78 | chương 3 | mục 3.22] ính xác của mô hình, hệ thống phân tích traffic cần đáp ứng yêu cầu
+hiệu năng vì dữ liệu log phát sinh liên tục. Thực nghiệm được thực hiện bằng cách gửi
+request mẫu tới API thu thập log, gọi API dự đoán của AI Service và truy vấn dữ liệu
+dashboard. Các số liệu dưới đây phản ánh môi trường thử nghiệm quy mô nhỏ, nhưng
+giúp xác định điểm nghẽn ban đầu của hệ thống.
+Bảng 3.22.Kết quả đo thời gian phản hồi trung bình trong thử nghiệm
+Thành phần kiểm
+thử
+Số lần gọi Thời gian trungbình Nhận xét
+Traff",1,2,#1 (trang 38) chứa 'Thời gian phản hồi API≤2 giây' dưới Yêu cầu phi chức năng – Hiệu năng.
+A,q23,"So với cách phát hiện dựa trên luật, Random Forest xử lý thế nào một session có tần suất request không quá cao nhưng có các dấu hiệu khác đáng ngờ?","Kết hợp nhiều dấu hiệu yếu (interval đều, unique_pages thấp, error_rate cao) thành quyết định tổng thể nên vẫn có thể đánh dấu session đó là nghi ngờ.",77,"Random Forest có thể kết hợp nhiều dấu hiệu yếu thành quyết định tổng thể, ví dụ một session không có RPM quá cao nhưng có interval đều, unique_pages thấp và error_rate cao vẫn có thể bị đánh dấu nghi ngờ.","[trang 77 | chương 3 | mục 3.20] Random Forest 93,85% 88,94% / 91,90% Ổn định nhất trong thử
+nghiệm, phù hợp làm mô
+hình chính
+So với rule-based baseline, Random Forest cải thiện rõ rệt khả năng phát hiện bot
+do phân tích đồng thời nhiều đặc trưng. Rule-based chỉ hiệu quả với các trường hợp rõ
+ràng như request quá dày hoặc user-agent chứa chuỗi bot. Trong khi đó, Random Forest
+có thể kết hợp nhiều dấu hiệu yếu thành quyết định tổng thể, ví dụ một session không có
+RPM quá cao nhưng có interval đều, unique_pages thấp và error_rat","[trang 55 | chương 2 | mục 2.6] hính được sử dụng gồm requests_per_minute, session_duration,
+page_views, unique_pages, average_interval, error_rate và user_agent_score. Đây là các
+đặc trưng có ý nghĩa thực tiễn vì bot thường gửi request với tần suất cao, khoảng cách
+request đều bất thường, số trang truy cập ít hoặc có user-agent chứa dấu hiệu tự động.
+Mô hình Random Forest được huấn luyện trên tập dữ liệu sau tiền xử lý. Khi có
+traffic mới, Backend tạo vector đặc trưng theo đúng thứ tự đã dùng lúc huấn luyện và gửi
+sang AI Ser","[trang 77 | chương 3 | mục 3.21] kết quả dự đoán khó được tin tưởng trong
+vận hành thực tế.
+Bảng 3.21.Mức độ ảnh hưởng của các feature trong mô hình Random Forest
+Feature Importance Diễn giải
+requests_per_minute 0,28 Tác động lớn nhất; bot thường
+gửi request nhanh hơn người
+dùng thật
+average_interval 0,21 Khoảng cách request quá đều
+hoặc quá ngắn là dấu hiệu tự
+động hóa
+user_agent_score 0,17 Phát hiện user-agent rỗng,
+bất thường hoặc chứa chuỗi
+crawler/script
+unique_pages 0,14 Bot thường lặp lại ít endpoint
+thay vì duyệt nhiều",0,1,"#1 (trang 77) có ý 'kết hợp nhiều dấu hiệu yếu thành quyết định tổng thể' và ví dụ, nhưng bị cắt ở 'error_rat', mất kết luận 'vẫn có thể bị đánh dấu nghi ngờ'."
+A,q24,Điểm yếu đầu tiên mà đồ án tự nhận về dữ liệu thực nghiệm là gì?,Dữ liệu thực nghiệm còn hạn chế về quy mô và độ đa dạng.,85,Hạn chế đầu tiên của đề tài là dữ liệu thực nghiệm còn hạn chế về quy mô và độ đa dạng.,"[trang 66 | chương 3 | mục 3.8] thực tế. Vì vậy, kết quả hiện tại nên được xem là cơ sở
+ban đầu. Để triển khai trong sản phẩm thật, hệ thống cần thu thập thêm dữ liệu, đánh giá
+trên traffic thực, bổ sung cơ chế giám sát drift và quy trình cập nhật mô hình định kỳ.
+3.9. Phân tích dữ liệu đầu vào và chất lượng dataset
+Dữ liệu đầu vào quyết định trực tiếp đến độ tin cậy của mô hình phát hiện bot
+traffic. Trong đồ án, dữ liệu được hình thành từ log truy cập và dữ liệu mô phỏng nhằm
+tạo ra cả hai nhóm hành vi: người dùng thật và b","[trang 74 | chương 3 | mục 3.18] kiểm thử. Cách chia này giúp mô hình được học trên phần lớn dữ liệu nhưng vẫn có
+tập test độc lập để đánh giá khả năng dự đoán. Các chỉ số dưới đây không được xem là
+kết quả tuyệt đối cho môi trường sản phẩm thật, mà là cơ sở định lượng để chứng minh
+pipeline xử lý dữ liệu và mô hình Machine Learning hoạt động đúng hướng trong phạm
+vi đồ án.
+Bảng 3.17.Phân bố dữ liệu thực nghiệm sử dụng cho đánh giá mô hình
+Nhóm dữ liệu Số mẫu Tỷ lệ Đặc điểm chính
+Real traffic 6.850 session 68,5% Hành vi truy cậ","[trang 67 | chương 3 | mục 3.9] test nhưng hoạt động kém với bot tinh vi.
+Để hạn chế rủi ro này, báo cáo đề xuất sử dụng dataset hiện tại như nền tảng ban
+đầu, đồng thời bổ sung dữ liệu thật từ quá trình vận hành. Các mẫu bị hệ thống cảnh báo
+cần được quản trị viên xác nhận lại để tạo nhãn chất lượng cao hơn. Đây là cơ chế học
+liên tục giúp mô hình cải thiện dần theo thời gian.
+Bảng 3.8.Đánh giá chất lượng dataset và hướng cải thiện
+Tiêu chí đánh giá
+dataset
+Hiện trạng
+trong đồ án
+Ảnh hưởng đến mô
+hình
+Đề xuất cải thiện
+Độ đầy",0,1,"Chỉ có bằng chứng gián tiếp (trang 66–67: cần thu thập thêm dữ liệu, dữ liệu mô phỏng, kém với bot tinh vi); câu 'Mặt hạn chế chính…' ở trang 66 nằm ở chunk khác; không nêu rõ hạn chế về quy mô và độ đa dạng."
+B,q19,Hệ thống của đề tài ưu tiên phát hiện bot hợp lệ hay bot độc hại?,Bot độc hại (bad bot traffic).,23,Đề tài tập trung chủ yếu vào việc phát hiện bad bot traffic.,"[trang 79 | chương 3 | mục 3.23] Bảng 3.23.So sánh định tính hệ thống đề tài với nhóm giải pháp phổ biến
+Tiêu chí Hệ thống đềtài GoogleAnalytics Cloudflare/Imperva Rule-basedthủ công
+Mục tiêu
+chính
+Phân tích
+traffic và
+phát hiện bot
+bằng ML
+Phân tích
+marketing
+Bảo vệ website chuyên
+sâu
+Chặn theo
+luật đơn giản
+Khả năng tùy
+chỉnh feature
+Cao Thấp Trung bình
+đến cao
+Trung bình
+Chi phí triển
+khai
+Thấp trong
+phạm vi
+demo
+Thấp đến
+trung bình
+Cao hơn, tùy
+gói dịch vụ
+Thấp
+Giải thích kết
+quả theo session
+Có thể bổ
+sung feature
+importance
+Hạn chế Có nhưng
+phụ thuộc
+nền tảng
+Dễ hiểu
+nhưng thiếu
+linh hoạt
+Phù hợp
+nghiên
+cứu/học tập
+Rất phù hợp Chỉ phù hợp
+phân tích số
+liệu
+Khó can
+thiệp sâu
+Phù hợp mức
+cơ bản
+Khả năng
+phát hiện bot
+mới
+Có thể cải
+thiện bằng
+retraining
+Không phải
+trọng tâm
+Mạnh Yếu nếu
+không cập
+nhật luật
+Qua so","[trang 85 | chương None | mục KẾT LUẬN] Một kết quả quan trọng khác là đề tài đã chỉ ra sự khác biệt giữa phương pháp rule-based và phương pháp Machine Learning. Rule-based đơn giản và dễ triển khai nhưng
+khó thích nghi với bot mới, trong khi Machine Learning có thể phân tích nhiều đặc trưng
+hành vi cùng lúc và hỗ trợ đánh giá theo xác suất. Điều này phù hợp với nhu cầu nâng
+cao chất lượng dữ liệu trong Digital Marketing.
+2. Hạn chế của đề tài
+Hạn chế đầu tiên của đề tài là dữ liệu thực nghiệm còn hạn chế về quy mô và độ đa
+dạng. Một phần dữ liệu được mô phỏng nhằm phục vụ huấn luyện, do đó chưa thể phản
+ánh đầy đủ toàn bộ hành vi bot trong môi trường Internet thực tế. Các bot hiện đại có thể
+dùng kỹ thuật giả lập trình duyệt, thay đổi IP, thay đổi user-agent và mô phỏng thời gian
+tương tác tự nhiên.","[trang 23 | chương 1 | mục 1.5.1] - Theo phương pháp phát hiện: Rule-based Detection (dựa trên luật cố định như
+blacklist IP, user-agent), Statistical-based Detection (dựa trên thống kê hành vi
+truy cập) và Machine Learning-based Detection (sử dụng mô hình ML để học và
+phân loại hành vi traffic). Hệ thống trong đề tài áp dụng hướng tiếp cận Machine
+Learning để tăng khả năng phát hiện các bot hiện đại.
+- Theo hành vi truy cập: Human-like Bot (mô phỏng hành vi người dùng thật như di
+chuyển chuột, delay request) và Script-based Bot (gửi request tự động với tần suất
+cao, hành vi lặp lại). Đây là đặc trưng quan trọng trong quá trình xây dựng feature
+cho mô hình ML.",0,0,"Không chunk nào nêu đề tài tập trung vào bad bot; #3 đúng trang 23 nhưng là phần sau của danh sách phân loại (theo phương pháp, theo hành vi)."
+B,q20,"Khi người dùng thật bị nghi là bot vì có hành vi bất thường nhưng hợp lệ, hệ thống nên xử lý thế nào?",Không tự động chặn ngay mà đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm.,64,hệ thống không nên tự động chặn ngay mà nên đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm,"[trang 64 | chương 3 | mục 3.5] là bot. Trường hợp này ảnh hưởng trực tiếp đến trải nghiệm người dùng và có thể khiến
+doanh nghiệp bỏ qua traffic hợp lệ. False negative xảy ra khi bot bị dự đoán là người
+dùng thật, làm dữ liệu thống kê tiếp tục bị nhiễu và ảnh hưởng đến quyết định marketing.
+Các false positive thường xuất hiện khi người dùng thật có hành vi bất thường
+nhưng hợp lệ, ví dụ tải lại trang liên tục, mở nhiều tab trong thời gian ngắn hoặc truy cập
+qua mạng có IP dùng chung. Trong trường hợp này, hệ thống không nên tự động chặn
+ngay mà nên đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm. Việc hiển thị
+confidence và feature nổi bật giúp giảm rủi ro ra quyết định sai.","[trang 15 | chương 1 | mục 1.1.2] Điều
+này cho thấy lưu lượng truy cập không còn hoàn toàn đến từ người dùng thật, gây ảnh
+hưởng nghiêm trọng đến độ chính xác của dữ liệu phân tích và hiệu quả của các chiến
+dịch Digital Marketing. [14]
+Phần lớn các hệ thống hiện nay hoạt động dựa trên phương pháp rule-based detection, sử dụng các luật cố định như chặn IP, giới hạn request hoặc kiểm tra user agent để
+phát hiện bot traffic. Tuy nhiên, các bot hiện đại ngày càng tinh vi và có khả năng mô
+phỏng hành vi người dùng thật. Theo thống kê của Cloudflare năm 2024, hơn 30% bot
+traffic độc hại có khả năng giả lập trình duyệt và hành vi người dùng, khiến nhiều hệ
+thống bảo vệ truyền thống khó phát hiện chính xác.","[trang 27 | chương 1 | mục 1.6.1] những bot hiện đại có khả năng giả lập hành vi người dùng.
+Trong hệ thống phát hiện bot traffic, Machine Learning cho phép mô hình tự động
+học từ các đặc trưng dữ liệu như:
+- Địa chỉ IP;
+- User-Agent;
+- Thời gian giữa các request;
+- Số lượng request trong session;
+- Hành vi click và điều hướng;
+- Thời gian ở lại trang;
+- Tần suất truy cập bất thường.
+Dựa trên các đặc trưng này, mô hình sẽ phân loại traffic thành các nhóm như: người
+dùng thật (real user), bot hợp lệ (good bot) hoặc bot bất thường (malicious bot/spam
+traffic). So với phương pháp rule-based truyền thống, hướng tiếp cận bằng Machine
+Learning có ưu điểm lớn ở khả năng thích nghi với các hành vi bot mới và giảm tỷ lệ
+phát hiện sai (false positive).",1,2,"#1 (trang 64, mục 3.5) chứa cả điều kiện (người dùng thật có hành vi bất thường nhưng hợp lệ) và cách xử lý."
+B,q21,"Trong chương 3, mô hình Random Forest đạt Accuracy bao nhiêu trên tập kiểm thử?","Khoảng 93,85% (dự đoán đúng 1.877/2.000 mẫu).","75, 77","mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy khoảng 93,85%","[trang 75 | chương 3 | mục 3.19] Bảng 3.18.Ma trận nhầm lẫn trên tập kiểm thử 2.000 session
+Thực tế / Dự đoán Dự đoán Real Dự đoán Bot Tổng
+Real traffic 1.298 72 1.370
+Bot traffic 51 579 630
+Tổng 1.349 651 2.000
+Từ ma trận trên, mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy
+khoảng 93,85%. Với lớp bot, Precision đạt khoảng 88,94%, nghĩa là trong các session bị
+đánh dấu là bot, phần lớn thực sự có hành vi bất thường. Recall của lớp bot đạt khoảng
+91,90%, cho thấy mô hình phát hiện được đa số bot trong tập kiểm thử. F1-score của lớp
+bot đạt khoảng 90,40%, thể hiện sự cân bằng tương đối tốt giữa khả năng phát hiện bot
+và hạn chế cảnh báo nhầm.
+Bảng 3.19.Tổng hợp chỉ số đánh giá mô hình Random Forest
+Chỉ số Giá trị Ý nghĩa trong hệ thống
+Accuracy 93,85% Tỷ lệ dự đoán đúng tổng thể
+trên tập kiểm thử","[trang 76 | chương 3 | mục 3.19] Precision (Bot) 88,94% Mức độ tin cậy của các cảnh
+báo bot
+Recall (Bot) 91,90% Khả năng phát hiện bot thật
+trong dữ liệu
+F1-score (Bot) 90,40% Cân bằng giữa Precision và
+Recall của lớp bot
+False Positive Rate 5,26% Tỷ lệ người dùng thật bị cảnh
+báo nhầm
+False Negative Rate 8,10% Tỷ lệ bot chưa được phát hiện
+Kết quả này cho thấy Random Forest phù hợp với dữ liệu dạng bảng của đề tài.
+Tuy nhiên, các chỉ số vẫn cần được hiểu trong giới hạn của dataset thử nghiệm. Khi triển
+khai thực tế, mô hình cần được đánh giá lại định kỳ bằng dữ liệu traffic thật, đặc biệt
+trong các giai đoạn chạy quảng cáo khi hành vi truy cập có thể biến động mạnh.","[trang 75 | chương 3 | mục 3.18] Tập huấn luyện 8.000 session 80% Dùng để huấn luyện
+Random Forest và điều
+chỉnh pipeline feature
+Tập kiểm thử 2.000 session 20% Dùng để đánh giá Accuracy, Precision, Recall
+và F1-score
+Từ bảng trên có thể thấy dữ liệu không cân bằng tuyệt đối nhưng vẫn có đủ mẫu
+của cả hai lớp để huấn luyện mô hình phân loại. Tỷ lệ bot khoảng 31,5% cao hơn môi
+trường thông thường, tuy nhiên phù hợp với mục tiêu kiểm thử vì giúp mô hình có đủ
+mẫu bất thường để học các pattern quan trọng. Trong thực tế, nếu tỷ lệ bot thấp hơn
+nhiều, hệ thống cần áp dụng thêm kỹ thuật xử lý mất cân bằng dữ liệu như class_weight,
+oversampling hoặc đánh giá bằng Precision/Recall thay vì chỉ dựa vào Accuracy.",1,2,"#1 (trang 75, mục 3.19) chứa '1.877/2.000 mẫu, tương ứng Accuracy khoảng 93,85%' và Bảng 3.19."
+B,q22,"Trong chương 2, yêu cầu phi chức năng về hiệu năng quy định thời gian phản hồi API tối đa là bao lâu?",Không quá 2 giây đối với các request thông thường.,38,Thời gian phản hồi API≤2 giây đối với các request thông thường.,"[trang 38 | chương 2 | mục 2.2.1] - Thống kê hiệu suất mô hình Machine Learning.
+2.2.2. Yêu cầu phi chức năng
+Bên cạnh yêu cầu chức năng, hệ thống phát hiện bot traffic phải đáp ứng các yêu
+cầu phi chức năng sau:
+Hiệu năng
+Hệ thống phải có khả năng xử lý và ghi nhận traffic theo thời gian thực với độ trễ
+thấp. Thời gian phản hồi API≤2 giây đối với các request thông thường. Dashboard cập
+nhật dữ liệu traffic gần realtime nhằm hỗ trợ quản trị viên giám sát nhanh chóng. Hệ
+thống cần xử lý được nhiều request đồng thời mà không ảnh hưởng đáng kể đến hiệu
+năng website.","[trang 78 | chương 3 | mục 3.22] Bảng 3.22.Kết quả đo thời gian phản hồi trung bình trong thử nghiệm
+Thành phần kiểm
+thử
+Số lần gọi Thời gian trungbình Nhận xét
+Traffic Collection
+API
+1.000 request 42 ms/request Phù hợp cho ghi log
+nhanh ở quy mô thử
+nghiệm
+Backend Dashboard
+API
+300 request 185 ms/request Phụ thuộc truy vấn
+MySQL và bộ lọc thời
+gian
+AI Service /predict 500 request 96 ms/request Thời gian chấp nhận
+được với feature vector nhỏ
+Truy vấn danh sách
+bot
+200 request 230 ms/request Cần index tốt theo label, timestamp và session_id
+Xuất báo cáo CSV 50 request 1,4 s/request Chậm hơn do tổng
+hợp dữ liệu theo
+khoảng thời gian
+Kết quả cho thấy lớp thu thập log có độ trễ thấp hơn các thành phần còn lại, phù
+hợp với mục tiêu tách riêng Go API để nhận request realtime.","[trang 77 | chương 3 | mục 3.21] Bảng 3.21.Mức độ ảnh hưởng của các feature trong mô hình Random Forest
+Feature Importance Diễn giải
+requests_per_minute 0,28 Tác động lớn nhất; bot thường
+gửi request nhanh hơn người
+dùng thật
+average_interval 0,21 Khoảng cách request quá đều
+hoặc quá ngắn là dấu hiệu tự
+động hóa
+user_agent_score 0,17 Phát hiện user-agent rỗng,
+bất thường hoặc chứa chuỗi
+crawler/script
+unique_pages 0,14 Bot thường lặp lại ít endpoint
+thay vì duyệt nhiều trang khác
+nhau
+error_rate 0,09 Tỷ lệ lỗi cao có thể phản ánh
+hành vi scan path hoặc truy cập
+sai endpoint
+session_duration 0,07 Phiên quá ngắn hoặc quá dài bất
+thường có thể cần kiểm tra
+page_views 0,04 Bổ trợ đánh giá mức độ hoạt
+động của session",1,2,#1 (trang 38) chứa 'Thời gian phản hồi API≤2 giây' dưới Yêu cầu phi chức năng – Hiệu năng.
+B,q23,"So với cách phát hiện dựa trên luật, Random Forest xử lý thế nào một session có tần suất request không quá cao nhưng có các dấu hiệu khác đáng ngờ?","Kết hợp nhiều dấu hiệu yếu (interval đều, unique_pages thấp, error_rate cao) thành quyết định tổng thể nên vẫn có thể đánh dấu session đó là nghi ngờ.",77,"Random Forest có thể kết hợp nhiều dấu hiệu yếu thành quyết định tổng thể, ví dụ một session không có RPM quá cao nhưng có interval đều, unique_pages thấp và error_rate cao vẫn có thể bị đánh dấu nghi ngờ.","[trang 77 | chương 3 | mục 3.20] Random Forest 93,85% 88,94% / 91,90% Ổn định nhất trong thử
+nghiệm, phù hợp làm mô
+hình chính
+So với rule-based baseline, Random Forest cải thiện rõ rệt khả năng phát hiện bot
+do phân tích đồng thời nhiều đặc trưng. Rule-based chỉ hiệu quả với các trường hợp rõ
+ràng như request quá dày hoặc user-agent chứa chuỗi bot. Trong khi đó, Random Forest
+có thể kết hợp nhiều dấu hiệu yếu thành quyết định tổng thể, ví dụ một session không có
+RPM quá cao nhưng có interval đều, unique_pages thấp và error_rate cao vẫn có thể bị
+đánh dấu nghi ngờ.","[trang 77 | chương 3 | mục 3.21] Bảng 3.21.Mức độ ảnh hưởng của các feature trong mô hình Random Forest
+Feature Importance Diễn giải
+requests_per_minute 0,28 Tác động lớn nhất; bot thường
+gửi request nhanh hơn người
+dùng thật
+average_interval 0,21 Khoảng cách request quá đều
+hoặc quá ngắn là dấu hiệu tự
+động hóa
+user_agent_score 0,17 Phát hiện user-agent rỗng,
+bất thường hoặc chứa chuỗi
+crawler/script
+unique_pages 0,14 Bot thường lặp lại ít endpoint
+thay vì duyệt nhiều trang khác
+nhau
+error_rate 0,09 Tỷ lệ lỗi cao có thể phản ánh
+hành vi scan path hoặc truy cập
+sai endpoint
+session_duration 0,07 Phiên quá ngắn hoặc quá dài bất
+thường có thể cần kiểm tra
+page_views 0,04 Bổ trợ đánh giá mức độ hoạt
+động của session","[trang 63 | chương 3 | mục 3.4] 3.4. Đánh giá mô hình Machine Learning
+Mô hình Random Forest được sử dụng làm mô hình chính để phân loại traffic
+thành hai lớp: người dùng thật và bot traffic. Bộ đặc trưng gồm requests_per_minute, session_duration, page_views, unique_pages, average_interval, error_rate và user_agent_score.
+Các đặc trưng này phản ánh trực tiếp hành vi truy cập, do đó phù hợp với bài toán phát
+hiện bot dựa trên hành vi thay vì chỉ dựa vào blacklist IP .
+Kết quả thực nghiệm trên dữ liệu hiện tại cho thấy mô hình có khả năng phân biệt
+tốt các mẫu bot rõ ràng, đặc biệt là các session có tần suất request cao, thời gian giữa hai
+request quá ngắn hoặc truy cập lặp lại ít trang. Những mẫu người dùng thật thường có
+session_duration dài hơn, unique_pages đa dạng hơn và average_interval tự nhiên hơn.",1,2,"#1 (trang 77, mục 3.20) chứa trọn câu so sánh với rule-based và kết luận 'vẫn có thể bị đánh dấu nghi ngờ'."
+B,q24,Điểm yếu đầu tiên mà đồ án tự nhận về dữ liệu thực nghiệm là gì?,Dữ liệu thực nghiệm còn hạn chế về quy mô và độ đa dạng.,85,Hạn chế đầu tiên của đề tài là dữ liệu thực nghiệm còn hạn chế về quy mô và độ đa dạng.,"[trang 66 | chương 3 | mục 3.8] Mặt hạn chế chính là dữ liệu thực nghiệm chưa đủ lớn và chưa phản ánh đầy đủ các
+kiểu bot tinh vi trong môi trường thực tế. Vì vậy, kết quả hiện tại nên được xem là cơ sở
+ban đầu. Để triển khai trong sản phẩm thật, hệ thống cần thu thập thêm dữ liệu, đánh giá
+trên traffic thực, bổ sung cơ chế giám sát drift và quy trình cập nhật mô hình định kỳ.","[trang 66 | chương 3 | mục 3.9] 3.9. Phân tích dữ liệu đầu vào và chất lượng dataset
+Dữ liệu đầu vào quyết định trực tiếp đến độ tin cậy của mô hình phát hiện bot
+traffic. Trong đồ án, dữ liệu được hình thành từ log truy cập và dữ liệu mô phỏng nhằm
+tạo ra cả hai nhóm hành vi: người dùng thật và bot. Nhóm người dùng thật thường có
+thời gian phiên dài hơn, số trang truy cập đa dạng hơn và khoảng cách giữa các request
+không đều tuyệt đối. Ngược lại, nhóm bot thường có request lặp lại, tần suất cao hoặc
+user-agent chứa dấu hiệu crawler.","[trang 73 | chương 3 | mục 3.17] 3.17. Bài học rút ra từ quá trình thực nghiệm
+Quá trình thực nghiệm cho thấy việc xây dựng hệ thống phát hiện bot traffic không
+thể tách rời giữa kỹ thuật phần mềm và Machine Learning. Nếu chỉ có mô hình tốt nhưng
+pipeline dữ liệu thiếu ổn định, kết quả dự đoán sẽ không đáng tin cậy. Ngược lại, nếu hệ
+thống thu thập và lưu trữ dữ liệu tốt nhưng feature chưa phản ánh đúng hành vi truy cập,
+mô hình cũng khó phát hiện chính xác bot traffic.
+Bài học quan trọng nhất là cần thiết kế dữ liệu ngay từ đầu theo mục tiêu phân tích.
+Các trường như session_id, timestamp, request_url, user_agent và http_status phải được
+ghi nhất quán để có thể tính feature về sau. Ngoài ra, việc lưu riêng dữ liệu thô, dữ liệu
+feature và kết quả dự đoán giúp hệ thống dễ kiểm tra sai lệch khi có kết quả bất thường.",0,2,"Bằng chứng tương đương: #1 (trang 66, mục 3.8) nêu 'dữ liệu thực nghiệm chưa đủ lớn và chưa phản ánh đầy đủ các kiểu bot tinh vi', cùng nội dung với câu gold ở Kết luận (trang 85); đủ để trả lời và truy nguồn, nhưng không xác nhận thứ tự 'đầu tiên'. Hit@3 tự động tính trượt vì gold chỉ ghi trang 85."
+C,q19,Hệ thống của đề tài ưu tiên phát hiện bot hợp lệ hay bot độc hại?,Bot độc hại (bad bot traffic).,23,Đề tài tập trung chủ yếu vào việc phát hiện bad bot traffic.,"[trang 79 | chương 3 | mục 3.23] Bảng 3.23.So sánh định tính hệ thống đề tài với nhóm giải pháp phổ biến
+Tiêu chí Hệ thống đềtài GoogleAnalytics Cloudflare/Imperva Rule-basedthủ công
+Mục tiêu
+chính
+Phân tích
+traffic và
+phát hiện bot
+bằng ML
+Phân tích
+marketing
+Bảo vệ website chuyên
+sâu
+Chặn theo
+luật đơn giản
+Khả năng tùy
+chỉnh feature
+Cao Thấp Trung bình
+đến cao
+Trung bình
+Chi phí triển
+khai
+Thấp trong
+phạm vi
+demo
+Thấp đến
+trung bình
+Cao hơn, tùy
+gói dịch vụ
+Thấp
+Giải thích kết
+quả theo session
+Có thể bổ
+sung feature
+importance
+Hạn chế Có nhưng
+phụ thuộc
+nền tảng
+Dễ hiểu
+nhưng thiếu
+linh hoạt
+Phù hợp
+nghiên
+cứu/học tập
+Rất phù hợp Chỉ phù hợp
+phân tích số
+liệu
+Khó can
+thiệp sâu
+Phù hợp mức
+cơ bản
+Khả năng
+phát hiện bot
+mới
+Có thể cải
+thiện bằng
+retraining
+Không phải
+trọng tâm
+Mạnh Yếu nếu
+không cập
+nhật luật
+Qua so","[trang 85 | chương None | mục KẾT LUẬN] Một kết quả quan trọng khác là đề tài đã chỉ ra sự khác biệt giữa phương pháp rule-based và phương pháp Machine Learning. Rule-based đơn giản và dễ triển khai nhưng
+khó thích nghi với bot mới, trong khi Machine Learning có thể phân tích nhiều đặc trưng
+hành vi cùng lúc và hỗ trợ đánh giá theo xác suất. Điều này phù hợp với nhu cầu nâng
+cao chất lượng dữ liệu trong Digital Marketing.
+2. Hạn chế của đề tài
+Hạn chế đầu tiên của đề tài là dữ liệu thực nghiệm còn hạn chế về quy mô và độ đa
+dạng. Một phần dữ liệu được mô phỏng nhằm phục vụ huấn luyện, do đó chưa thể phản
+ánh đầy đủ toàn bộ hành vi bot trong môi trường Internet thực tế. Các bot hiện đại có thể
+dùng kỹ thuật giả lập trình duyệt, thay đổi IP, thay đổi user-agent và mô phỏng thời gian
+tương tác tự nhiên.","[trang 23 | chương 1 | mục 1.5.1] - Theo phương pháp phát hiện: Rule-based Detection (dựa trên luật cố định như
+blacklist IP, user-agent), Statistical-based Detection (dựa trên thống kê hành vi
+truy cập) và Machine Learning-based Detection (sử dụng mô hình ML để học và
+phân loại hành vi traffic). Hệ thống trong đề tài áp dụng hướng tiếp cận Machine
+Learning để tăng khả năng phát hiện các bot hiện đại.
+- Theo hành vi truy cập: Human-like Bot (mô phỏng hành vi người dùng thật như di
+chuyển chuột, delay request) và Script-based Bot (gửi request tự động với tần suất
+cao, hành vi lặp lại). Đây là đặc trưng quan trọng trong quá trình xây dựng feature
+cho mô hình ML.",0,0,"Không chunk nào nêu đề tài tập trung vào bad bot; #3 đúng trang 23 nhưng là phần sau của danh sách phân loại (theo phương pháp, theo hành vi)."
+C,q20,"Khi người dùng thật bị nghi là bot vì có hành vi bất thường nhưng hợp lệ, hệ thống nên xử lý thế nào?",Không tự động chặn ngay mà đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm.,64,hệ thống không nên tự động chặn ngay mà nên đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm,"[trang 64 | chương 3 | mục 3.5] là bot. Trường hợp này ảnh hưởng trực tiếp đến trải nghiệm người dùng và có thể khiến
+doanh nghiệp bỏ qua traffic hợp lệ. False negative xảy ra khi bot bị dự đoán là người
+dùng thật, làm dữ liệu thống kê tiếp tục bị nhiễu và ảnh hưởng đến quyết định marketing.
+Các false positive thường xuất hiện khi người dùng thật có hành vi bất thường
+nhưng hợp lệ, ví dụ tải lại trang liên tục, mở nhiều tab trong thời gian ngắn hoặc truy cập
+qua mạng có IP dùng chung. Trong trường hợp này, hệ thống không nên tự động chặn
+ngay mà nên đưa vào danh sách nghi ngờ để quản trị viên kiểm tra thêm. Việc hiển thị
+confidence và feature nổi bật giúp giảm rủi ro ra quyết định sai.","[trang 15 | chương 1 | mục 1.1.2] Điều
+này cho thấy lưu lượng truy cập không còn hoàn toàn đến từ người dùng thật, gây ảnh
+hưởng nghiêm trọng đến độ chính xác của dữ liệu phân tích và hiệu quả của các chiến
+dịch Digital Marketing. [14]
+Phần lớn các hệ thống hiện nay hoạt động dựa trên phương pháp rule-based detection, sử dụng các luật cố định như chặn IP, giới hạn request hoặc kiểm tra user agent để
+phát hiện bot traffic. Tuy nhiên, các bot hiện đại ngày càng tinh vi và có khả năng mô
+phỏng hành vi người dùng thật. Theo thống kê của Cloudflare năm 2024, hơn 30% bot
+traffic độc hại có khả năng giả lập trình duyệt và hành vi người dùng, khiến nhiều hệ
+thống bảo vệ truyền thống khó phát hiện chính xác.","[trang 27 | chương 1 | mục 1.6.1] những bot hiện đại có khả năng giả lập hành vi người dùng.
+Trong hệ thống phát hiện bot traffic, Machine Learning cho phép mô hình tự động
+học từ các đặc trưng dữ liệu như:
+- Địa chỉ IP;
+- User-Agent;
+- Thời gian giữa các request;
+- Số lượng request trong session;
+- Hành vi click và điều hướng;
+- Thời gian ở lại trang;
+- Tần suất truy cập bất thường.
+Dựa trên các đặc trưng này, mô hình sẽ phân loại traffic thành các nhóm như: người
+dùng thật (real user), bot hợp lệ (good bot) hoặc bot bất thường (malicious bot/spam
+traffic). So với phương pháp rule-based truyền thống, hướng tiếp cận bằng Machine
+Learning có ưu điểm lớn ở khả năng thích nghi với các hành vi bot mới và giảm tỷ lệ
+phát hiện sai (false positive).",1,2,"#1 (trang 64, mục 3.5) chứa cả điều kiện (người dùng thật có hành vi bất thường nhưng hợp lệ) và cách xử lý."
+C,q21,"Trong chương 3, mô hình Random Forest đạt Accuracy bao nhiêu trên tập kiểm thử?","Khoảng 93,85% (dự đoán đúng 1.877/2.000 mẫu).","75, 77","mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy khoảng 93,85%","[trang 75 | chương 3 | mục 3.19] Bảng 3.18.Ma trận nhầm lẫn trên tập kiểm thử 2.000 session
+Thực tế / Dự đoán Dự đoán Real Dự đoán Bot Tổng
+Real traffic 1.298 72 1.370
+Bot traffic 51 579 630
+Tổng 1.349 651 2.000
+Từ ma trận trên, mô hình dự đoán đúng 1.877/2.000 mẫu, tương ứng Accuracy
+khoảng 93,85%. Với lớp bot, Precision đạt khoảng 88,94%, nghĩa là trong các session bị
+đánh dấu là bot, phần lớn thực sự có hành vi bất thường. Recall của lớp bot đạt khoảng
+91,90%, cho thấy mô hình phát hiện được đa số bot trong tập kiểm thử. F1-score của lớp
+bot đạt khoảng 90,40%, thể hiện sự cân bằng tương đối tốt giữa khả năng phát hiện bot
+và hạn chế cảnh báo nhầm.
+Bảng 3.19.Tổng hợp chỉ số đánh giá mô hình Random Forest
+Chỉ số Giá trị Ý nghĩa trong hệ thống
+Accuracy 93,85% Tỷ lệ dự đoán đúng tổng thể
+trên tập kiểm thử","[trang 76 | chương 3 | mục 3.19] Precision (Bot) 88,94% Mức độ tin cậy của các cảnh
+báo bot
+Recall (Bot) 91,90% Khả năng phát hiện bot thật
+trong dữ liệu
+F1-score (Bot) 90,40% Cân bằng giữa Precision và
+Recall của lớp bot
+False Positive Rate 5,26% Tỷ lệ người dùng thật bị cảnh
+báo nhầm
+False Negative Rate 8,10% Tỷ lệ bot chưa được phát hiện
+Kết quả này cho thấy Random Forest phù hợp với dữ liệu dạng bảng của đề tài.
+Tuy nhiên, các chỉ số vẫn cần được hiểu trong giới hạn của dataset thử nghiệm. Khi triển
+khai thực tế, mô hình cần được đánh giá lại định kỳ bằng dữ liệu traffic thật, đặc biệt
+trong các giai đoạn chạy quảng cáo khi hành vi truy cập có thể biến động mạnh.","[trang 75 | chương 3 | mục 3.18] Tập huấn luyện 8.000 session 80% Dùng để huấn luyện
+Random Forest và điều
+chỉnh pipeline feature
+Tập kiểm thử 2.000 session 20% Dùng để đánh giá Accuracy, Precision, Recall
+và F1-score
+Từ bảng trên có thể thấy dữ liệu không cân bằng tuyệt đối nhưng vẫn có đủ mẫu
+của cả hai lớp để huấn luyện mô hình phân loại. Tỷ lệ bot khoảng 31,5% cao hơn môi
+trường thông thường, tuy nhiên phù hợp với mục tiêu kiểm thử vì giúp mô hình có đủ
+mẫu bất thường để học các pattern quan trọng. Trong thực tế, nếu tỷ lệ bot thấp hơn
+nhiều, hệ thống cần áp dụng thêm kỹ thuật xử lý mất cân bằng dữ liệu như class_weight,
+oversampling hoặc đánh giá bằng Precision/Recall thay vì chỉ dựa vào Accuracy.",1,2,"#1 (trang 75, mục 3.19) chứa '1.877/2.000 mẫu, tương ứng Accuracy khoảng 93,85%' và Bảng 3.19."
+C,q22,"Trong chương 2, yêu cầu phi chức năng về hiệu năng quy định thời gian phản hồi API tối đa là bao lâu?",Không quá 2 giây đối với các request thông thường.,38,Thời gian phản hồi API≤2 giây đối với các request thông thường.,"[trang 38 | chương 2 | mục 2.2.1] - Thống kê hiệu suất mô hình Machine Learning.
+2.2.2. Yêu cầu phi chức năng
+Bên cạnh yêu cầu chức năng, hệ thống phát hiện bot traffic phải đáp ứng các yêu
+cầu phi chức năng sau:
+Hiệu năng
+Hệ thống phải có khả năng xử lý và ghi nhận traffic theo thời gian thực với độ trễ
+thấp. Thời gian phản hồi API≤2 giây đối với các request thông thường. Dashboard cập
+nhật dữ liệu traffic gần realtime nhằm hỗ trợ quản trị viên giám sát nhanh chóng. Hệ
+thống cần xử lý được nhiều request đồng thời mà không ảnh hưởng đáng kể đến hiệu
+năng website.","[trang 53 | chương 2 | mục 2.4.2] và session id.
+API Service chịu trách nhiệm kiểm tra API key, loại bỏ dữ liệu thiếu trường bắt
+buộc, sau đó ghi dữ liệu vào bảng request log và cập nhật thông tin session tương ứng.
+Đối với dữ liệu phát sinh liên tục, hệ thống ưu tiên ghi nhanh vào database, sau đó
+xử lý feature ở bước sau nhằm giảm độ trễ khi website gửi log.","[trang 52 | chương 2 | mục 2.4] Đăng
+ký/đăng nhập
+User,
+Admin
+Email, mật
+khẩu, thông
+tin tài khoản
+Validate dữ liệu, mã
+hóa mật khẩu, tạo
+JWT/session
+Tài khoản hợp lệ
+và phiên đăng
+nhập
+Quản lý
+website/API
+key
+Admin/User Tên website,
+domain,
+trạng thái
+API key
+Tạo, thu hồi và
+kiểm tra quyền sử
+dụng API key
+Website được
+phép gửi log
+traffic
+Thu thập
+traffic
+Tracking
+script, API
+Service
+IP,
+user-agent,
+URL,
+referrer,
+timestamp,
+session id
+Ghi log, chuẩn hóa
+trường dữ liệu, lưu
+request/session
+Bản ghi traffic
+phục vụ phân
+tích
+Dashboard
+thống kê
+User/Admin Khoảng thời
+gian, bộ lọc
+traffic
+Tổng hợp lượt truy
+cập, bot rate, top IP,
+biểu đồ realtime
+Biểu đồ và chỉ số
+giám sát
+Phát hiện bot Backend, AI
+Service
+Vector đặc
+trưng session
+Gọi mô hình ML,
+tính xác suất và
+nhãn phân loại
+Kết quả real
+user/bot và
+confidence
+Cảnh báo",1,2,#1 (trang 38) chứa 'Thời gian phản hồi API≤2 giây' dưới Yêu cầu phi chức năng – Hiệu năng.
+C,q23,"So với cách phát hiện dựa trên luật, Random Forest xử lý thế nào một session có tần suất request không quá cao nhưng có các dấu hiệu khác đáng ngờ?","Kết hợp nhiều dấu hiệu yếu (interval đều, unique_pages thấp, error_rate cao) thành quyết định tổng thể nên vẫn có thể đánh dấu session đó là nghi ngờ.",77,"Random Forest có thể kết hợp nhiều dấu hiệu yếu thành quyết định tổng thể, ví dụ một session không có RPM quá cao nhưng có interval đều, unique_pages thấp và error_rate cao vẫn có thể bị đánh dấu nghi ngờ.","[trang 77 | chương 3 | mục 3.20] Random Forest 93,85% 88,94% / 91,90% Ổn định nhất trong thử
+nghiệm, phù hợp làm mô
+hình chính
+So với rule-based baseline, Random Forest cải thiện rõ rệt khả năng phát hiện bot
+do phân tích đồng thời nhiều đặc trưng. Rule-based chỉ hiệu quả với các trường hợp rõ
+ràng như request quá dày hoặc user-agent chứa chuỗi bot. Trong khi đó, Random Forest
+có thể kết hợp nhiều dấu hiệu yếu thành quyết định tổng thể, ví dụ một session không có
+RPM quá cao nhưng có interval đều, unique_pages thấp và error_rate cao vẫn có thể bị
+đánh dấu nghi ngờ.","[trang 77 | chương 3 | mục 3.21] Bảng 3.21.Mức độ ảnh hưởng của các feature trong mô hình Random Forest
+Feature Importance Diễn giải
+requests_per_minute 0,28 Tác động lớn nhất; bot thường
+gửi request nhanh hơn người
+dùng thật
+average_interval 0,21 Khoảng cách request quá đều
+hoặc quá ngắn là dấu hiệu tự
+động hóa
+user_agent_score 0,17 Phát hiện user-agent rỗng,
+bất thường hoặc chứa chuỗi
+crawler/script
+unique_pages 0,14 Bot thường lặp lại ít endpoint
+thay vì duyệt nhiều trang khác
+nhau
+error_rate 0,09 Tỷ lệ lỗi cao có thể phản ánh
+hành vi scan path hoặc truy cập
+sai endpoint
+session_duration 0,07 Phiên quá ngắn hoặc quá dài bất
+thường có thể cần kiểm tra
+page_views 0,04 Bổ trợ đánh giá mức độ hoạt
+động của session","[trang 63 | chương 3 | mục 3.4] 3.4. Đánh giá mô hình Machine Learning
+Mô hình Random Forest được sử dụng làm mô hình chính để phân loại traffic
+thành hai lớp: người dùng thật và bot traffic. Bộ đặc trưng gồm requests_per_minute, session_duration, page_views, unique_pages, average_interval, error_rate và user_agent_score.
+Các đặc trưng này phản ánh trực tiếp hành vi truy cập, do đó phù hợp với bài toán phát
+hiện bot dựa trên hành vi thay vì chỉ dựa vào blacklist IP .
+Kết quả thực nghiệm trên dữ liệu hiện tại cho thấy mô hình có khả năng phân biệt
+tốt các mẫu bot rõ ràng, đặc biệt là các session có tần suất request cao, thời gian giữa hai
+request quá ngắn hoặc truy cập lặp lại ít trang. Những mẫu người dùng thật thường có
+session_duration dài hơn, unique_pages đa dạng hơn và average_interval tự nhiên hơn.",1,2,"#1 (trang 77, mục 3.20) chứa trọn câu so sánh với rule-based và kết luận 'vẫn có thể bị đánh dấu nghi ngờ'."
+C,q24,Điểm yếu đầu tiên mà đồ án tự nhận về dữ liệu thực nghiệm là gì?,Dữ liệu thực nghiệm còn hạn chế về quy mô và độ đa dạng.,85,Hạn chế đầu tiên của đề tài là dữ liệu thực nghiệm còn hạn chế về quy mô và độ đa dạng.,"[trang 66 | chương 3 | mục 3.8] Mặt hạn chế chính là dữ liệu thực nghiệm chưa đủ lớn và chưa phản ánh đầy đủ các
+kiểu bot tinh vi trong môi trường thực tế. Vì vậy, kết quả hiện tại nên được xem là cơ sở
+ban đầu. Để triển khai trong sản phẩm thật, hệ thống cần thu thập thêm dữ liệu, đánh giá
+trên traffic thực, bổ sung cơ chế giám sát drift và quy trình cập nhật mô hình định kỳ.","[trang 66 | chương 3 | mục 3.9] 3.9. Phân tích dữ liệu đầu vào và chất lượng dataset
+Dữ liệu đầu vào quyết định trực tiếp đến độ tin cậy của mô hình phát hiện bot
+traffic. Trong đồ án, dữ liệu được hình thành từ log truy cập và dữ liệu mô phỏng nhằm
+tạo ra cả hai nhóm hành vi: người dùng thật và bot. Nhóm người dùng thật thường có
+thời gian phiên dài hơn, số trang truy cập đa dạng hơn và khoảng cách giữa các request
+không đều tuyệt đối. Ngược lại, nhóm bot thường có request lặp lại, tần suất cao hoặc
+user-agent chứa dấu hiệu crawler.","[trang 73 | chương 3 | mục 3.17] 3.17. Bài học rút ra từ quá trình thực nghiệm
+Quá trình thực nghiệm cho thấy việc xây dựng hệ thống phát hiện bot traffic không
+thể tách rời giữa kỹ thuật phần mềm và Machine Learning. Nếu chỉ có mô hình tốt nhưng
+pipeline dữ liệu thiếu ổn định, kết quả dự đoán sẽ không đáng tin cậy. Ngược lại, nếu hệ
+thống thu thập và lưu trữ dữ liệu tốt nhưng feature chưa phản ánh đúng hành vi truy cập,
+mô hình cũng khó phát hiện chính xác bot traffic.
+Bài học quan trọng nhất là cần thiết kế dữ liệu ngay từ đầu theo mục tiêu phân tích.
+Các trường như session_id, timestamp, request_url, user_agent và http_status phải được
+ghi nhất quán để có thể tính feature về sau. Ngoài ra, việc lưu riêng dữ liệu thô, dữ liệu
+feature và kết quả dự đoán giúp hệ thống dễ kiểm tra sai lệch khi có kết quả bất thường.",0,2,"Bằng chứng tương đương: #1 (trang 66, mục 3.8) nêu 'dữ liệu thực nghiệm chưa đủ lớn và chưa phản ánh đầy đủ các kiểu bot tinh vi', cùng nội dung với câu gold ở Kết luận (trang 85); đủ để trả lời và truy nguồn, nhưng không xác nhận thứ tự 'đầu tiên'. Hit@3 tự động tính trượt vì gold chỉ ghi trang 85."

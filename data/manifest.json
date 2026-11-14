@@ -1,0 +1,758 @@
+{
+  "generated_at": "2026-11-13T18:50:55+07:00",
+  "generated_by": "python -m src.ingestion",
+  "extractor": "pypdf 6.21.4",
+  "python": "3.14.10",
+  "page_numbering": "Số trang PDF vật lý, đánh số từ 1 (không phải số in ở đầu trang).",
+  "counting_rule": "Tính các trang trong phạm vi nội dung khai báo (Mở đầu đến Kết luận), trừ trang lỗi trích chữ và trang chỉ có hình (dưới 200 ký tự chữ sau chuẩn hóa). Loại bìa, lời cảm ơn, lời cam đoan, mục lục, danh sách bảng/hình, tài liệu tham khảo và trang nhận xét.",
+  "normalization": "Unicode NFC; bỏ ký tự vô hình; gộp khoảng trắng trong dòng; tách số trang in ở đầu trang; nối từ bị ngắt dòng bằng gạch nối và gộp chữ hoa bị tách do kerning, dựa trên từ vựng của tài liệu.",
+  "sources": [
+    {
+      "source_id": "doan-bot-traffic-2026",
+      "title": "Xây dựng hệ thống phân tích và phát hiện lưu lượng truy cập ảo trong Digital Marketing dựa trên Machine Learning (đồ án tốt nghiệp, 2026)",
+      "source_path_or_url": "starter/data/K21.KTPM_Nguyễn Tiến Cường.pdf",
+      "license_or_permission": "Đồ án tốt nghiệp do chính học viên là tác giả; học viên cho phép xử lý cục bộ cho mục đích học tập trong lab này. Chưa xác minh quy định công bố đồ án của trường và trang bìa có thông tin cá nhân, nên bản PDF gốc không commit vào repo.",
+      "accessed_at": "2026-11-13",
+      "language": "vi",
+      "snapshot": {
+        "sha256": "d8a338154e5f1b33c046c13b1fd29e30d4512c66eb35b2d0c8da4b94d75059eb",
+        "bytes": 14833437,
+        "pdf_producer": "MiKTeX pdfTeX-1.40.28"
+      },
+      "physical_pages": 89,
+      "content_page_range": [
+        11,
+        86
+      ],
+      "counted_page_count": 69,
+      "counted_chars": 138371,
+      "counted_pages": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        85,
+        86
+      ],
+      "excluded_pages": [
+        {
+          "page": 1,
+          "status": "excluded",
+          "reason": "bìa",
+          "chars": 366
+        },
+        {
+          "page": 2,
+          "status": "excluded",
+          "reason": "bìa phụ",
+          "chars": 366
+        },
+        {
+          "page": 3,
+          "status": "excluded",
+          "reason": "lời cảm ơn",
+          "chars": 1768
+        },
+        {
+          "page": 4,
+          "status": "excluded",
+          "reason": "lời cam đoan",
+          "chars": 668
+        },
+        {
+          "page": 5,
+          "status": "excluded",
+          "reason": "mục lục",
+          "chars": 2143
+        },
+        {
+          "page": 6,
+          "status": "excluded",
+          "reason": "mục lục",
+          "chars": 3049
+        },
+        {
+          "page": 7,
+          "status": "excluded",
+          "reason": "mục lục",
+          "chars": 2701
+        },
+        {
+          "page": 8,
+          "status": "excluded",
+          "reason": "danh sách bảng",
+          "chars": 2900
+        },
+        {
+          "page": 9,
+          "status": "excluded",
+          "reason": "danh sách bảng",
+          "chars": 558
+        },
+        {
+          "page": 10,
+          "status": "excluded",
+          "reason": "danh sách hình vẽ",
+          "chars": 1662
+        },
+        {
+          "page": 40,
+          "status": "excluded",
+          "reason": "chỉ có hình/chú thích (dưới 200 ký tự chữ)",
+          "chars": 33
+        },
+        {
+          "page": 41,
+          "status": "excluded",
+          "reason": "chỉ có hình/chú thích (dưới 200 ký tự chữ)",
+          "chars": 169
+        },
+        {
+          "page": 80,
+          "status": "excluded",
+          "reason": "chỉ có hình/chú thích (dưới 200 ký tự chữ)",
+          "chars": 79
+        },
+        {
+          "page": 81,
+          "status": "excluded",
+          "reason": "chỉ có hình/chú thích (dưới 200 ký tự chữ)",
+          "chars": 73
+        },
+        {
+          "page": 82,
+          "status": "excluded",
+          "reason": "chỉ có hình/chú thích (dưới 200 ký tự chữ)",
+          "chars": 46
+        },
+        {
+          "page": 83,
+          "status": "excluded",
+          "reason": "chỉ có hình/chú thích (dưới 200 ký tự chữ)",
+          "chars": 56
+        },
+        {
+          "page": 84,
+          "status": "excluded",
+          "reason": "chỉ có hình/chú thích (dưới 200 ký tự chữ)",
+          "chars": 94
+        },
+        {
+          "page": 87,
+          "status": "excluded",
+          "reason": "tài liệu tham khảo",
+          "chars": 2307
+        },
+        {
+          "page": 88,
+          "status": "excluded",
+          "reason": "tài liệu tham khảo",
+          "chars": 339
+        },
+        {
+          "page": 89,
+          "status": "excluded",
+          "reason": "trang nhận xét của giáo viên hướng dẫn (để trống)",
+          "chars": 1983
+        }
+      ],
+      "structure": [
+        {
+          "chapter": null,
+          "title": "MỞ ĐẦU",
+          "pages": "11-13",
+          "page_count": 3
+        },
+        {
+          "chapter": 1,
+          "title": "CƠ SỞ LÝ THUYẾT",
+          "pages": "14-34",
+          "page_count": 21
+        },
+        {
+          "chapter": 2,
+          "title": "KHẢO SÁT VÀ PHÂN TÍCH HỆ THỐNG",
+          "pages": "35-39, 42-59",
+          "page_count": 23
+        },
+        {
+          "chapter": 3,
+          "title": "THIẾT KẾ HỆ THỐNG",
+          "pages": "60-79",
+          "page_count": 20
+        },
+        {
+          "chapter": null,
+          "title": "KẾT LUẬN",
+          "pages": "85-86",
+          "page_count": 2
+        }
+      ],
+      "heading_check": {
+        "toc_sections": 89,
+        "toc_sections_detected": 89,
+        "toc_sections_missing": [],
+        "headings_not_in_toc": []
+      },
+      "repairs": {
+        "hyphen_joined": 63,
+        "hyphen_kept": 3,
+        "kerning_merged": 29
+      },
+      "ingest_seconds": 1.83,
+      "pages": [
+        {
+          "page": 11,
+          "page_label": "1",
+          "chars": 2691,
+          "chapter": null,
+          "section": "MỞ ĐẦU"
+        },
+        {
+          "page": 12,
+          "page_label": "2",
+          "chars": 2523,
+          "chapter": null,
+          "section": "MỞ ĐẦU"
+        },
+        {
+          "page": 13,
+          "page_label": "3",
+          "chars": 1566,
+          "chapter": null,
+          "section": "MỞ ĐẦU"
+        },
+        {
+          "page": 14,
+          "page_label": "4",
+          "chars": 1894,
+          "chapter": 1,
+          "section": "1"
+        },
+        {
+          "page": 15,
+          "page_label": "5",
+          "chars": 2077,
+          "chapter": 1,
+          "section": "1.1.1"
+        },
+        {
+          "page": 16,
+          "page_label": "6",
+          "chars": 1935,
+          "chapter": 1,
+          "section": "1.1.2"
+        },
+        {
+          "page": 17,
+          "page_label": "7",
+          "chars": 2833,
+          "chapter": 1,
+          "section": "1.1.2"
+        },
+        {
+          "page": 18,
+          "page_label": "8",
+          "chars": 2581,
+          "chapter": 1,
+          "section": "1.1.4"
+        },
+        {
+          "page": 19,
+          "page_label": "9",
+          "chars": 1629,
+          "chapter": 1,
+          "section": "1.1.4"
+        },
+        {
+          "page": 20,
+          "page_label": "10",
+          "chars": 1729,
+          "chapter": 1,
+          "section": "1.2.2"
+        },
+        {
+          "page": 21,
+          "page_label": "11",
+          "chars": 2713,
+          "chapter": 1,
+          "section": "1.2.3"
+        },
+        {
+          "page": 22,
+          "page_label": "12",
+          "chars": 2840,
+          "chapter": 1,
+          "section": "1.3.2"
+        },
+        {
+          "page": 23,
+          "page_label": "13",
+          "chars": 2641,
+          "chapter": 1,
+          "section": "1.4"
+        },
+        {
+          "page": 24,
+          "page_label": "14",
+          "chars": 2714,
+          "chapter": 1,
+          "section": "1.5.1"
+        },
+        {
+          "page": 25,
+          "page_label": "15",
+          "chars": 1384,
+          "chapter": 1,
+          "section": "1.5.2"
+        },
+        {
+          "page": 26,
+          "page_label": "16",
+          "chars": 3016,
+          "chapter": 1,
+          "section": "1.5.3"
+        },
+        {
+          "page": 27,
+          "page_label": "17",
+          "chars": 2225,
+          "chapter": 1,
+          "section": "1.6.1"
+        },
+        {
+          "page": 28,
+          "page_label": "18",
+          "chars": 1519,
+          "chapter": 1,
+          "section": "1.6.2"
+        },
+        {
+          "page": 29,
+          "page_label": "19",
+          "chars": 2270,
+          "chapter": 1,
+          "section": "1.6.3"
+        },
+        {
+          "page": 30,
+          "page_label": "20",
+          "chars": 2521,
+          "chapter": 1,
+          "section": "1.7.1"
+        },
+        {
+          "page": 31,
+          "page_label": "21",
+          "chars": 2358,
+          "chapter": 1,
+          "section": "1.7.2"
+        },
+        {
+          "page": 32,
+          "page_label": "22",
+          "chars": 1933,
+          "chapter": 1,
+          "section": "1.8.1"
+        },
+        {
+          "page": 33,
+          "page_label": "23",
+          "chars": 2756,
+          "chapter": 1,
+          "section": "1.8.3"
+        },
+        {
+          "page": 34,
+          "page_label": "24",
+          "chars": 1206,
+          "chapter": 1,
+          "section": "1.9"
+        },
+        {
+          "page": 35,
+          "page_label": "25",
+          "chars": 1925,
+          "chapter": 2,
+          "section": "2"
+        },
+        {
+          "page": 36,
+          "page_label": "26",
+          "chars": 2281,
+          "chapter": 2,
+          "section": "2.1.2"
+        },
+        {
+          "page": 37,
+          "page_label": "27",
+          "chars": 1316,
+          "chapter": 2,
+          "section": "2.2.1"
+        },
+        {
+          "page": 38,
+          "page_label": "28",
+          "chars": 1969,
+          "chapter": 2,
+          "section": "2.2.1"
+        },
+        {
+          "page": 39,
+          "page_label": "29",
+          "chars": 858,
+          "chapter": 2,
+          "section": "2.2.2"
+        },
+        {
+          "page": 42,
+          "page_label": "32",
+          "chars": 1001,
+          "chapter": 2,
+          "section": "2.2.3"
+        },
+        {
+          "page": 43,
+          "page_label": "33",
+          "chars": 1864,
+          "chapter": 2,
+          "section": "2.2.3"
+        },
+        {
+          "page": 44,
+          "page_label": "34",
+          "chars": 1595,
+          "chapter": 2,
+          "section": "2.2.3"
+        },
+        {
+          "page": 45,
+          "page_label": "35",
+          "chars": 1518,
+          "chapter": 2,
+          "section": "2.2.3"
+        },
+        {
+          "page": 46,
+          "page_label": "36",
+          "chars": 1965,
+          "chapter": 2,
+          "section": "2.2.3"
+        },
+        {
+          "page": 47,
+          "page_label": "37",
+          "chars": 1489,
+          "chapter": 2,
+          "section": "2.3.1"
+        },
+        {
+          "page": 48,
+          "page_label": "38",
+          "chars": 640,
+          "chapter": 2,
+          "section": "2.3.4"
+        },
+        {
+          "page": 49,
+          "page_label": "39",
+          "chars": 1121,
+          "chapter": 2,
+          "section": "2.3.5"
+        },
+        {
+          "page": 50,
+          "page_label": "40",
+          "chars": 1161,
+          "chapter": 2,
+          "section": "2.3.7"
+        },
+        {
+          "page": 51,
+          "page_label": "41",
+          "chars": 2699,
+          "chapter": 2,
+          "section": "2.3.8"
+        },
+        {
+          "page": 52,
+          "page_label": "42",
+          "chars": 1832,
+          "chapter": 2,
+          "section": "2.4"
+        },
+        {
+          "page": 53,
+          "page_label": "43",
+          "chars": 2100,
+          "chapter": 2,
+          "section": "2.4.2"
+        },
+        {
+          "page": 54,
+          "page_label": "44",
+          "chars": 1716,
+          "chapter": 2,
+          "section": "2.5"
+        },
+        {
+          "page": 55,
+          "page_label": "45",
+          "chars": 1976,
+          "chapter": 2,
+          "section": "2.6"
+        },
+        {
+          "page": 56,
+          "page_label": "46",
+          "chars": 1928,
+          "chapter": 2,
+          "section": "2.6"
+        },
+        {
+          "page": 57,
+          "page_label": "47",
+          "chars": 2763,
+          "chapter": 2,
+          "section": "2.7.1"
+        },
+        {
+          "page": 58,
+          "page_label": "48",
+          "chars": 2598,
+          "chapter": 2,
+          "section": "2.7.3"
+        },
+        {
+          "page": 59,
+          "page_label": "49",
+          "chars": 1510,
+          "chapter": 2,
+          "section": "2.7.7"
+        },
+        {
+          "page": 60,
+          "page_label": "50",
+          "chars": 1969,
+          "chapter": 3,
+          "section": "3"
+        },
+        {
+          "page": 61,
+          "page_label": "51",
+          "chars": 2317,
+          "chapter": 3,
+          "section": "3.2"
+        },
+        {
+          "page": 62,
+          "page_label": "52",
+          "chars": 2204,
+          "chapter": 3,
+          "section": "3.2.4"
+        },
+        {
+          "page": 63,
+          "page_label": "53",
+          "chars": 2177,
+          "chapter": 3,
+          "section": "3.4"
+        },
+        {
+          "page": 64,
+          "page_label": "54",
+          "chars": 2371,
+          "chapter": 3,
+          "section": "3.5"
+        },
+        {
+          "page": 65,
+          "page_label": "55",
+          "chars": 2213,
+          "chapter": 3,
+          "section": "3.6"
+        },
+        {
+          "page": 66,
+          "page_label": "56",
+          "chars": 2520,
+          "chapter": 3,
+          "section": "3.7"
+        },
+        {
+          "page": 67,
+          "page_label": "57",
+          "chars": 2272,
+          "chapter": 3,
+          "section": "3.9"
+        },
+        {
+          "page": 68,
+          "page_label": "58",
+          "chars": 1954,
+          "chapter": 3,
+          "section": "3.10"
+        },
+        {
+          "page": 69,
+          "page_label": "59",
+          "chars": 1951,
+          "chapter": 3,
+          "section": "3.11"
+        },
+        {
+          "page": 70,
+          "page_label": "60",
+          "chars": 1870,
+          "chapter": 3,
+          "section": "3.12"
+        },
+        {
+          "page": 71,
+          "page_label": "61",
+          "chars": 2393,
+          "chapter": 3,
+          "section": "3.14"
+        },
+        {
+          "page": 72,
+          "page_label": "62",
+          "chars": 2355,
+          "chapter": 3,
+          "section": "3.15"
+        },
+        {
+          "page": 73,
+          "page_label": "63",
+          "chars": 2194,
+          "chapter": 3,
+          "section": "3.16"
+        },
+        {
+          "page": 74,
+          "page_label": "64",
+          "chars": 2003,
+          "chapter": 3,
+          "section": "3.17"
+        },
+        {
+          "page": 75,
+          "page_label": "65",
+          "chars": 1885,
+          "chapter": 3,
+          "section": "3.18"
+        },
+        {
+          "page": 76,
+          "page_label": "66",
+          "chars": 1705,
+          "chapter": 3,
+          "section": "3.19"
+        },
+        {
+          "page": 77,
+          "page_label": "67",
+          "chars": 1649,
+          "chapter": 3,
+          "section": "3.20"
+        },
+        {
+          "page": 78,
+          "page_label": "68",
+          "chars": 1839,
+          "chapter": 3,
+          "section": "3.21"
+        },
+        {
+          "page": 79,
+          "page_label": "69",
+          "chars": 1735,
+          "chapter": 3,
+          "section": "3.23"
+        },
+        {
+          "page": 85,
+          "page_label": "75",
+          "chars": 2425,
+          "chapter": null,
+          "section": "KẾT LUẬN"
+        },
+        {
+          "page": 86,
+          "page_label": "76",
+          "chars": 991,
+          "chapter": null,
+          "section": "KẾT LUẬN"
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "sources": 1,
+    "counted_pages": 69,
+    "counted_chars": 138371
+  }
+}

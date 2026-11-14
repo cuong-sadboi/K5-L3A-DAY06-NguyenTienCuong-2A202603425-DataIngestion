@@ -8,3 +8,7 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+
+# Corpus gốc: PDF đồ án có thông tin cá nhân ở trang bìa, không commit (xem data/manifest.json)
+starter/data/*.pdf
+data/*.pdf
